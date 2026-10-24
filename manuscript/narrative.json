@@ -1,0 +1,433 @@
+{
+  "schema_version": 2,
+  "title": "Cross-screen analysis of insulin-content effects among cytokine-survival-favoring beta-cell knockouts",
+  "author": "UCP Technology LLC",
+  "date": "2026-10-24",
+  "pages": [
+    [
+      {
+        "type": "title",
+        "text": "{{title}}"
+      },
+      {
+        "type": "byline",
+        "text": "UCP Technology LLC\nRevised research report | 24 October 2026"
+      },
+      {
+        "type": "heading",
+        "text": "Abstract"
+      },
+      {
+        "type": "paragraph",
+        "text": "Whether beta-cell vulnerability can be reduced while preserving insulin production and glucose-responsive release motivates this comparison. We compared published cytokine-survival and intracellular insulin-content knockout catalogs in EndoC-betaH1 cells using explicit coverage and expression-based eligibility rules. {{primary_abstract}} {{accounting_abstract}} Post-review inspection identified precision loss in deposited guide probabilities; the unsupported independent guide-significance claim is withdrawn, without changing primary catalog membership or estimates. The resource identifies perturbations for testing whether apparent rescue preserves function, temporarily suppresses it, or reflects altered secretion, growth or selection. These separate screens do not establish a causal survival-function trade-off."
+      },
+      {
+        "type": "heading",
+        "text": "Protecting beta cells while preserving function"
+      },
+      {
+        "type": "paragraph",
+        "text": "Is the biology that supports insulin production and release also part of what makes a beta cell vulnerable, and can those properties be separated? The objective is durable, glucose-responsive insulin output from a surviving population through injury and recovery. Secretory load, functional state and stress resistance are already connected questions in beta-cell research [3,6,11]. The present study supplies specific perturbations and an explicit comparison framework with which to investigate that relationship; it does not claim to discover the broader question."
+      },
+      {
+        "type": "paragraph",
+        "text": "Benaglio et al. measured relative knockout representation after cytokine exposure; Rottner et al. measured representation in low versus high intracellular insulin bins [1,2]. We quantify their overlap against a common measurable background and retain evidence separately from eligibility. A survival-favoring/lower-content candidate motivates a causal question, not a diagnosis of functional loss. Reduced stores could reflect biosynthesis, release, degradation or cell state; relative enrichment could reflect death, proliferation or selection. The unresolved aggregate association establishes neither a universal trade-off nor independence."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Source designs and measurement identity"
+      },
+      {
+        "type": "generated_table",
+        "key": "source_design"
+      },
+      {
+        "type": "paragraph",
+        "text": "Positive survival beta denotes knockout enrichment under cytokines relative to untreated culture; positive insulin low/high log2 fold change (LFC) denotes enrichment in the low-insulin bin. These are different effect scales. The separate treatment-duration cell-count experiment reported with n=3 in Benaglio is not evidence for three independent genome-wide survival screens. Source-specific replication and sampling details are retained in the design record."
+      },
+      {
+        "type": "heading",
+        "text": "Guide probability precision limits the original audit"
+      },
+      {
+        "type": "paragraph",
+        "text": "{{semantic_finding}} The workbook's saved Power Query import explicitly assigns Int64.Type to all four S8 probability columns while retaining numeric LFC/counts. The original reanalysis interpreted stored FDR <0.10 as guide significance; this interpretation is withdrawn. Full-precision genome-wide original output was not recovered."
+      },
+      {
+        "type": "paragraph",
+        "text": "The deposited author code also uses count thresholds, replication of the same guide coordinate, an expression lookup and an explicit gene exclusion [5]. Our former per-replicate rule was not a reconstruction of that pipeline. {{rule_discrepancy}} S7 preserves continuous FDRs for a selected subset; we use those values only for explicitly available candidate guides, without treating absent S7 guides as nonsignificant."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Eligibility and evidence are different axes"
+      },
+      {
+        "type": "figure",
+        "path": "figures/eligibility_flow.png",
+        "width": 6.5,
+        "caption": "Figure 1. Candidate flow through common coverage and the expression restriction. Published screen evidence remains recorded when a candidate is excluded from the primary analysis.",
+        "alt": "Flow from 427 survival-favoring genes to 390 with common coverage, with 37 coverage losses, and then 285 primary-eligible genes, with 105 additional expression-related exclusions. NUPL1 retains its published lower-content call outside the primary set."
+      },
+      {
+        "type": "paragraph",
+        "text": "Exact symbols are joined after trimming whitespace, with no silent alias repair. Survival eligibility requires a unique finite record, at least three guides and no hsa- prefix. Insulin coverage requires at least three guide identities with valid paired rows and normalized count sum at least20 in each replicate; control targets are excluded. This is a declared cross-screen measurability rule, not the source publication's hit-selection rule."
+      },
+      {
+        "type": "paragraph",
+        "text": "The primary expression restriction requires a unique finite Table S5 GeneName-to-baseMean match and baseMean at least10. All duplicated expression names are excluded. This proxy comes from CALCOCO2-silencing/control RNA-seq; it selects a population with measured expression in that experiment and does not fully adjust for biological detectability or reconstruct the original screen filter. Removing or changing it is a sensitivity analysis."
+      },
+      {
+        "type": "paragraph",
+        "text": "{{nupl1_sentence}}"
+      },
+      {
+        "type": "heading",
+        "text": "Conditional catalog association"
+      },
+      {
+        "type": "paragraph",
+        "text": "Within the primary universe, exposure A denotes positive survival beta with the original survival FDR <0.10; outcome L denotes a published insulin Decrease label. Strata cross quintiles of log2(baseMean+1), survival-guide coverage3-5 versus6+, and insulin-guide coverage3 versus4+. With stratum size n, exposed count m and outcome count k, the fixed-margin likelihood is:"
+      },
+      {
+        "type": "equation",
+        "text": "Fixed-margin noncentral hypergeometric likelihood",
+        "latex": "\\Pr(X_s=x\\mid n_s,m_s,k_s,\\theta)\\ \\propto\\ {k_s\\choose x}{n_s-k_s\\choose m_s-x}\\theta^x."
+      },
+      {
+        "type": "paragraph",
+        "text": "We maximize the product likelihood and convolve stratum distributions. Inclusive tail inversion gives an equal-tailed95% interval; the one-sided enrichment p-value is the upper tail at odds ratio1. The original success criterion is a lower interval bound above1. Exactness is conditional on the independent-stratum, common-odds fixed-margin working model. Gene dependence, odds-ratio heterogeneity and source-screen selection uncertainty are not modeled."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Published-catalog enrichment remains unresolved"
+      },
+      {
+        "type": "paragraph",
+        "text": "{{primary_results}}"
+      },
+      {
+        "type": "generated_table",
+        "key": "contingency"
+      },
+      {
+        "type": "figure",
+        "path": "figures/signed_effects.png",
+        "width": 6.5,
+        "caption": "Figure 2. Full-range gene-level effect displays for both insulin replicates. All primary genes form the background; survival-favoring genes are colored by their published content call. Median guide LFC summarizes direction and magnitude, without treating binary deposited FDR values as valid significance estimates.",
+        "alt": "Two full-range scatterplots show survival beta against median insulin guide LFC for all primary genes, highlighting survival-favoring candidates with published lower-content, higher-content or no directional calls. Outliers remain visible."
+      },
+      {
+        "type": "paragraph",
+        "text": "{{accounting_results}}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Neither a confidence interval crossing 1 nor repeated inconclusive sensitivity analyses demonstrate equivalence. The estimate remains compatible with lower odds or a materially larger overlap under the declared working model."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Candidate-level evidence and guide concordance"
+      },
+      {
+        "type": "generated_table",
+        "key": "candidates"
+      },
+      {
+        "type": "paragraph",
+        "text": "Table 3 lists primary-eligible survival-favoring/lower-content candidates. The complete resource retains every source survival-favoring gene and separate fields for published screen evidence, coverage, eligibility and exclusion reason. Recovered S7 guide counts use continuous values from the selected subset. S8 zero-count columns remain explicitly provisional in the data file. Original source survival FDR values are retained, including the deposited zero for RAD52, which should not be read as an exactly zero scientific error probability."
+      },
+      {
+        "type": "paragraph",
+        "text": "{{guide_concordance}}"
+      },
+      {
+        "type": "paragraph",
+        "text": "Four covered guides do not imply four concordant effects. The paired display on the next page includes each guide's observed LFC in both replicates, including opposing directions, and connects the same identities. Within each gene, the color legend indexes sorted guide identities in candidate_paired_guide_effects.csv. Published calls remain the outcome; the displayed guides do not create a new significance rule."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Same guide identities across insulin replicates"
+      },
+      {
+        "type": "figure",
+        "path": "figures/paired_guide_effects.png",
+        "width": 6.35,
+        "caption": "Figure 3. Paired guide LFCs for the14 primary lower-content candidates. Each colored line connects the same guide identity between r0 and r1; every valid guide is shown. Guide numbers index sorted identities separately within each gene. Positive values favor the low-insulin bin. Axes vary by candidate to expose within-gene concordance, so vertical distances should not be compared between panels. No FDR filtering is applied to the display.",
+        "alt": "Fourteen labeled gene panels connect all observed guide LFC values between the two insulin replicates. Horizontal zero lines expose opposite signs and inconsistent effects; no guide is hidden by a significance filter."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Biology that changes interpretation"
+      },
+      {
+        "type": "paragraph",
+        "text": "A bounded annotation review separates direct beta-cell perturbation evidence from general cellular-process annotation. The complete15-candidate annotation includes NUPL1 and records sources, model context, plausible alternatives and untested endpoints. The examples below show why lower content and impaired function are not interchangeable, and why stress context matters."
+      },
+      {
+        "type": "generated_table",
+        "key": "biology"
+      },
+      {
+        "type": "paragraph",
+        "text": "Cellular-process membership supports a mechanistic question, not a validated mechanism for this cross-screen association. A published phenotype in a rodent beta-cell model does not demonstrate the same effect in EndoC-betaH1 cells or under the cytokine selection conditions. No candidate in this resource has acquired matched-condition validation merely by appearing in both catalogs."
+      },
+      {
+        "type": "heading",
+        "text": "Distinct candidates test distinct explanations"
+      },
+      {
+        "type": "paragraph",
+        "text": "SSR2 motivates a biosynthetic-demand hypothesis [6]; NCOA6 motivates transcriptional competence and functional identity [7]; SLC8B1 motivates secretion timing [9]. UBE2C's association with compensatory beta-cell proliferation in a mouse knockout study makes growth versus death a necessary distinction [10]. These candidates need not share a mechanism. Their annotations select informative measurements; none establishes that a functional downshift causes protection in the cytokine screen."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Separating protection from functional suppression"
+      },
+      {
+        "type": "paragraph",
+        "text": "These four explanations are hypotheses for matched experiments and can coexist: a protective downshift might also be reversible. The next study asks which perturbations protect without lasting loss of glucose-responsive function and whether any functional suppression contributes to protection or accompanies it."
+      },
+      {
+        "type": "table",
+        "caption": "Table 5. Competing explanations and discriminating predictions.",
+        "headers": [
+          "Possible explanation",
+          "Prediction to test"
+        ],
+        "widths": [
+          1.7,
+          4.8
+        ],
+        "font_size": 8.8,
+        "rows": [
+          [
+            "Functional downshifting contributes to protection",
+            "Independently reversing the downshift while retaining the original perturbation attenuates protection, with direct effects addressed. Necessity would require preventing the downshift to remove the protective effect under the tested conditions."
+          ],
+          [
+            "Protection and impairment are separable",
+            "Functional restoration can coexist with protection when the original perturbation is retained and the functional branch is manipulated independently."
+          ],
+          [
+            "Downshifting is a temporary refuge",
+            "Activity falls during injury but surviving cells recover glucose-responsive output after the insult and, where applicable, suppression are withdrawn."
+          ],
+          [
+            "The apparent trade-off reflects endpoints or selection",
+            "Relative enrichment occurs without less absolute death, or reduced stores coexist with maintained glucose-responsive release. Growth and population selection explain part of the signal."
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Intervene on the proposed mediator",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "First establish absolute survival and function in the same model, perturbation and condition. Then vary the proposed mediator independently while holding the original perturbation in place, with mediator-only controls and measurement of direct effects on injury. Original-gene rescue supports an on-target effect; reversing both phenotypes does not establish mediation. Verify that the mediator actually changed: content alone does not measure biosynthetic load. Suppression alone producing protection tests sufficiency, not necessity. Protection retained with the specified functional deficit prevented or restored supports separability in that setting; unsuccessful rescue attempts do not establish an unavoidable trade-off."
+      },
+      {
+        "type": "heading",
+        "text": "Measure function through injury and recovery",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "text": "Follow matched populations before, during and after injury; distinguish cytokine withdrawal from withdrawal of the perturbation. A permanent knockout followed by cytokine removal cannot test withdrawal of protective suppression. Compare transient and sustained interventions only after demonstrating that the intervention and relevant cellular program are reversible. Track surviving cells to distinguish recovery from replacement or selection. Measure death, proliferation, insulin production and storage, basal and glucose-responsive release, timing, and both total output and output per viable beta cell. Predefine durability and justified equivalence or noninferiority margins for the specified functions; nonsignificance is insufficient. Cumulative insulin output alone cannot establish preservation when basal release, responsiveness or timing is abnormal."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Candidate tests and interpretation decisions"
+      },
+      {
+        "type": "paragraph",
+        "text": "Table 6 translates the framework into illustrative decisions after matched phenotypes are established. The proposed interventions require validation in the chosen model; the cited studies motivate the variables, not proven mediator-specific tools. Independent intervention controls must separate mediator effects from direct injury or broad fitness changes."
+      },
+      {
+        "type": "table",
+        "caption": "Table 6. Candidate-specific causal and selection tests proposed for follow-up.",
+        "headers": [
+          "Candidate and proposed mediator",
+          "Independent variable with the original perturbation retained",
+          "Outcome that changes interpretation"
+        ],
+        "widths": [
+          1.25,
+          2.65,
+          2.6
+        ],
+        "font_size": 8.5,
+        "rows": [
+          [
+            "SSR2: proinsulin biosynthetic load [6]",
+            "Independently titrate proinsulin expression. Verify nascent synthesis and ER entry; changing transcript abundance alone may not restore the relevant load.",
+            "If measured load can be restored and protection attenuates, load suppression may contribute. Failure to alter ER throughput is an unsuccessful mediator test, not evidence against mediation."
+          ],
+          [
+            "NCOA6: a defined secretory transcriptional program [7]",
+            "Independently restore a validated downstream module, such as selected MAFA-target expression, while NCOA6 remains suppressed. Require functional rescue beyond marker expression.",
+            "Protection retained within a prespecified margin while the secretion deficit is reversed supports separability. Loss of protection may support contribution only after direct effects of module restoration are addressed."
+          ],
+          [
+            "UBE2C: proliferative expansion rather than reduced death [10]",
+            "Independently vary cell-cycle progression and track divisions and deaths, with matched intervention-only controls.",
+            "If extra representation disappears with proliferation control while death is unchanged, this supports a growth contribution to the enrichment. Reduced death supports a survival component that still requires functional assessment."
+          ]
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Include contrasting content phenotypes",
+        "level": 2
+      },
+      {
+        "type": "generated_table",
+        "key": "comparators"
+      },
+      {
+        "type": "paragraph",
+        "text": "RAB14 and LRRC61 broaden the proposed panel beyond lower-content candidates. Higher stores could reflect altered release or storage and do not establish improved glucose-responsive secretion or safer physiology. Apply the same absolute survival, basal release, stimulated output and recovery criteria. A survival-favoring candidate with no published content call remains functionally unresolved."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Sensitivity questions and information limits"
+      },
+      {
+        "type": "figure",
+        "path": "figures/sensitivity_forest.png",
+        "width": 6.5,
+        "caption": "Figure 4. Published-catalog estimates grouped by the question changed: expression universe, exposure threshold or survival comparator. These overlapping analyses reuse the source data and are not independent confirmations. The positive-versus-negative comparison directly addresses survival-direction specificity.",
+        "alt": "Forest plot with exact95% intervals for the primary catalog and six related analyses. All intervals cross odds ratio1, including the direct survival-favoring versus survival-harming comparison."
+      },
+      {
+        "type": "paragraph",
+        "text": "{{sensitivity_sentence}}"
+      },
+      {
+        "type": "paragraph",
+        "text": "{{precision_sentence}} These fixed-margin illustrations are not prospective wet-lab power calculations and do not propagate original-screen uncertainty. A large gene denominator does not supply many independent exposed outcome-positive observations."
+      },
+      {
+        "type": "paragraph",
+        "text": "{{mapping_sentence}}"
+      },
+      {
+        "type": "paragraph",
+        "text": "The two original three-guide calculations are retained as historical stored-zero-rule diagnostics in the release. They do not establish stronger statistical evidence. Revised model outputs, historical numerical outputs and the source-semantic findings are explicitly separated."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Scope, adjacent work and scientific use"
+      },
+      {
+        "type": "paragraph",
+        "text": "Okino et al. combine an EndoC-betaH1 thapsigargin survival screen with stress co-expression analysis and prior insulin-content regulators [3]. Van Tienhoven et al. reported stress-associated accelerated insulin mRNA decay with improved human-islet vitality and function [11]; this supports considering adaptive load regulation, without establishing recovery after withdrawal or the mechanism of any candidate here. Our cytokine-screen comparison adds a common measurable denominator, quantified uncertainty and exhaustive evidence/eligibility accounting. It makes no claim of a first survival-function connection or a causal trade-off. Howe et al. address the further question of transport from cellular phenotypes to human diabetes evidence [4]."
+      },
+      {
+        "type": "paragraph",
+        "text": "Gene dependence, source-hit uncertainty, off-target effects, unequal assay conditions and the expression proxy lie outside the fixed-margin sampling model. Repeated numerical agreement shares these source limitations; the guide-probability correction shows why computation alone cannot validate measurement meaning."
+      },
+      {
+        "type": "paragraph",
+        "text": "The resource provides perturbations with which to ask whether apparent rescue preserves beta-cell function, temporarily suspends it, or selects a population with persistently low output. Independent mediator intervention and recovery measurements are needed to identify where protection and functional loss can be separated. Neither the candidate overlap nor the unresolved aggregate association answers that question. A no-call or an eligibility exclusion is never evidence that function is preserved."
+      },
+      {
+        "type": "paragraph",
+        "text": "We measured cross-screen associations between relative cytokine-survival enrichment and intracellular insulin-content effects in a human beta-cell line; we did not measure prevention, remission, insulin independence, functional cure or biological cure."
+      },
+      {
+        "type": "heading",
+        "text": "Versioning and reproducibility"
+      },
+      {
+        "type": "paragraph",
+        "text": "The original protocol, arithmetic and unique earlier research are retained as historical material. Version 2 amends guide-probability interpretation and evidence/eligibility accounting after review; additional numerical diagnostics are exploratory. The causal and recovery framework is proposed, not performed. Inputs are deposited processed records, not reconstructed sequencing reads. The release supplies pinned inputs, original and revised calculations, generated tables, and code/data licensing notices. AI-assisted development and computational reconstruction do not substitute for biological validation."
+      },
+      {
+        "type": "paragraph",
+        "text": "Each build generates headline facts and tables from scientific results and checks dependency hashes and input consistency. The release includes reproducibility instructions, a native Word equation and descriptive figure alternative text."
+      }
+    ],
+    [
+      {
+        "type": "generated_references"
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Supplement: continuous effects and influence"
+      },
+      {
+        "type": "paragraph",
+        "text": "{{continuous_sentence}}"
+      },
+      {
+        "type": "figure",
+        "path": "figures/continuous_summary.png",
+        "width": 6.3,
+        "caption": "Figure S1. Exploratory within-stratum continuous contrasts, separately by insulin replicate. Weighting targets the observed survival-favoring group distribution. Gene-resampling intervals describe variability under gene exchangeability and do not estimate donor or independent-screen uncertainty.",
+        "alt": "Exploratory continuous mean contrasts compare survival-favoring genes with other primary genes within strata for each insulin replicate, using explicit exposed-count weights and gene-bootstrap intervals."
+      },
+      {
+        "type": "paragraph",
+        "text": "{{influence_sentence}}"
+      },
+      {
+        "type": "paragraph",
+        "text": "The bootstrap resamples genes jointly across the two insulin replicates within each exposure-by-stratum group. Singleton groups contribute no empirical within-group bootstrap variability, and pathway dependence can make these intervals optimistic. Full per-stratum sample sizes, weights, effect summaries and leave-one-stratum-out estimates are supplied. These diagnostics explain the original result; they do not replace its endpoint or success criterion."
+      },
+      {
+        "type": "generated_table",
+        "key": "legacy_guides"
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Supplement: full distributions, insulin replicate r0"
+      },
+      {
+        "type": "figure",
+        "path": "figures/threshold_free_r0.png",
+        "width": 6.2,
+        "caption": "Figure S2. Complete empirical distributions of per-gene median insulin LFC in primary strata, replicate r0. Headings encode expression quintile | survival-guide group | insulin-guide group. Gray is A=0; red is A=1. Sample sizes are shown; groups with one gene are empirical steps, not smooth estimates. The weighted summary in Figure S1 prevents tiny strata from receiving equal rhetorical weight.",
+        "alt": "Full empirical distribution panels for replicate r0 retain every primary stratum and label each exposure group size, including sparse and singleton groups."
+      }
+    ],
+    [
+      {
+        "type": "heading",
+        "text": "Supplement: full distributions, insulin replicate r1"
+      },
+      {
+        "type": "figure",
+        "path": "figures/threshold_free_r1.png",
+        "width": 6.2,
+        "caption": "Figure S3. Replicate r1 distributions using the same stratum and group definitions as Figure S2. Full-range diagnostics remain supplementary audit material. Changes in descriptive median sign across replicates do not by themselves establish assay failure or a reproducible directional association.",
+        "alt": "Full empirical distribution panels for replicate r1 use the same strata and display all group sample sizes, allowing comparison with replicate r0 without treating strata as equally informative."
+      }
+    ]
+  ]
+}

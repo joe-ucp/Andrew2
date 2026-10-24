@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "path": "config.json",
+      "sha256": "add98b216a764e429c6d57b8ac4ed0a98c05920f088be82c54b8009a8b3e446c"
+    },
+    {
+      "path": "evidence/input_manifest.json",
+      "sha256": "448e437c64735fe06ce76ea29976859f76563c2c49662a36216fbc54b2a20970"
+    },
+    {
+      "path": "evidence/protocol.md",
+      "sha256": "796b09c36a63b6cb238f933eac520748b109b58c05a4d40bafd71f1e94ca0aef"
+    },
+    {
+      "path": "data/raw/Supplementary_Data_09.CRISPR-KO-screen_results.csv",
+      "sha256": "d14accf5fa62320c114741de936c5f3ca05754babd0257670a55542a7c1187bc"
+    },
+    {
+      "path": "data/raw/41588_2022_1261_MOESM4_ESM.xlsx",
+      "sha256": "a8f47504edd26d999cb861f146f6fd6aa2ee2ec8368a01e29c808a10238a7690"
+    },
+    {
+      "path": "data/raw/mmc6.xlsx",
+      "sha256": "e8f7c71f8f47b94bef33f1f90b487a7bcbf32f4328d61460c60080cd4c7abb8c"
+    },
+    {
+      "path": "data/raw/16_CRISPR_figure.ipynb",
+      "sha256": "4b9da99ec36eb2d903a2b7fb987ceed24a7f56c9910da4860566171ee0360956"
+    }
+  ]
+}

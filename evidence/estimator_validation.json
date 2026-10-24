@@ -1,0 +1,33 @@
+{
+  "validated_at_utc": "2026-10-24T17:38:08.895938+00:00",
+  "status": "passed",
+  "synthetic_data_only": true,
+  "test_groups_run": 7,
+  "failure_count": 0,
+  "error_count": 0,
+  "skipped_count": 0,
+  "python_version": "3.12.14",
+  "numpy_version": "2.5.4",
+  "scipy_version": "1.18.1",
+  "independent_comparators": [
+    "Full joint enumeration with integer math.comb on synthetic strata",
+    "scipy.stats.contingency.odds_ratio(kind=conditional), single-stratum MLE and exact CI",
+    "scipy.stats.fisher_exact(alternative=greater), single-stratum inclusive enrichment p"
+  ],
+  "validation_properties": [
+    "20 enumerated stratum-set/odds-ratio distributions",
+    "Multi-stratum mean equation and exact equal-tail inversion",
+    "Zero and infinite estimates and intervals",
+    "Empty and wholly noninformative strata explicitly non-estimable",
+    "Outcome-complement reciprocal transformation and stratum permutation",
+    "Invalid margins rejected; output serializes with allow_nan=False",
+    "Five independent SciPy single-stratum estimates, intervals and p-values"
+  ],
+  "file_sha256": {
+    "code/exact_stats.py": "765c216550ec6826dc0ce3375a65d155161f0e18696f7735998a10fdd03bd2c4",
+    "tests/test_exact_stats.py": "8be6cf9cddad893e2d8e03ca2cc269114cad40e0575bb9d15a5cb5f31dcb67d4",
+    "tests/run_estimator_validation.py": "e4c9fe964756d6f90a66df05a783075ca57c5282158430dd9d16a7e9adaaf281"
+  },
+  "command": "python tests/run_estimator_validation.py",
+  "test_output": "test_complement_reciprocal_and_stratum_order (test_exact_stats.ExactStatsValidation.test_complement_reciprocal_and_stratum_order) ... ok\ntest_distribution_matches_full_joint_enumeration (test_exact_stats.ExactStatsValidation.test_distribution_matches_full_joint_enumeration) ... ok\ntest_enumerated_null_tail_and_inverted_interval (test_exact_stats.ExactStatsValidation.test_enumerated_null_tail_and_inverted_interval) ... ok\ntest_limit_distributions (test_exact_stats.ExactStatsValidation.test_limit_distributions) ... ok\ntest_mapping_input_and_invalid_counts (test_exact_stats.ExactStatsValidation.test_mapping_input_and_invalid_counts) ... ok\ntest_single_stratum_against_scipy (test_exact_stats.ExactStatsValidation.test_single_stratum_against_scipy) ... ok\ntest_zero_infinite_and_no_information (test_exact_stats.ExactStatsValidation.test_zero_infinite_and_no_information) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.985s\n\nOK\n"
+}

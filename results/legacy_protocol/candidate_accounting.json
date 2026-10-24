@@ -1,0 +1,22 @@
+{
+  "total": 427,
+  "primary_eligible": 285,
+  "classes": {
+    "Content effect unresolved": 269,
+    "Comparison unavailable or inconsistent": 142,
+    "Supported cross-screen conflict": 14,
+    "Survival-favoring with higher-content evidence": 2
+  },
+  "unavailable_reasons": {
+    "expression_lt10": 79,
+    "no_exact_expression_symbol": 25,
+    "no_exact_insulin_symbol": 9,
+    "no_exact_insulin_symbol;no_exact_expression_symbol": 9,
+    "covered_insulin_guides_lt3": 7,
+    "no_exact_insulin_symbol;expression_lt10": 7,
+    "covered_insulin_guides_lt3;expression_lt10": 2,
+    "covered_insulin_guides_lt3;no_exact_expression_symbol": 2,
+    "ambiguous_expression_symbol": 1,
+    "no_exact_insulin_symbol;ambiguous_expression_symbol": 1
+  }
+}

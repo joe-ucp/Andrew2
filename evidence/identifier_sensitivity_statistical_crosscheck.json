@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "scope": "Independent reconstruction of strata from the exported stable-ID gene table and independent conditional arithmetic. Identifier mapping and raw-source reconstruction are separately audited. This post-review sensitivity does not alter the exact-symbol primary.",
+  "unique_gene_and_source_identifiers": true,
+  "all_gene_strata_and_cells_match": true,
+  "manual_quintile_boundaries_match": true,
+  "published_only_outcome_labels_match": true,
+  "margins": {
+    "n": 12826,
+    "m": 306,
+    "k": 510,
+    "a": 14
+  },
+  "independent_scipy": {
+    "conditional_mle": 1.144356961767522,
+    "ci_lower": 0.6124127799523347,
+    "ci_upper": 1.973489453657292,
+    "p_enrichment": 0.353667343378146,
+    "support_lower": 0,
+    "support_upper": 291,
+    "observed_total": 14,
+    "n_informative_strata": 11
+  },
+  "max_abs_difference": 1.3309353619206377e-12,
+  "strata_sha256": "e0d9b8486e72eb5a7d3f55128ef5d8678d8c4929b3ff789860fafc5292d2cacd",
+  "hashes": {
+    "results/identifier_sensitivity/stable_id_primary_genes.csv": "4a0df87ce2d8ea7c0e6cb1e5a99ed17bafac5bbe90529164cc0fc28d055b892d",
+    "results/identifier_sensitivity/stable_id_primary_strata.csv": "e0d9b8486e72eb5a7d3f55128ef5d8678d8c4929b3ff789860fafc5292d2cacd",
+    "evidence/identifier_mapping_sensitivity.json": "331ee3755ad220f6b4538d539d6df0497afae961c1839b74959ff96bf0b102b4",
+    "tests/validate_identifier_sensitivity.py": "d535347ce58c4272c8a207b4b0a610d40e317944529ae5334b791b5d7b344c29",
+    "tests/run_statistical_crosscheck.py": "4c4d35a7d97d056d842a961eb3641f6fe385240aff6a73ab0606e134d3a5d123"
+  }
+}

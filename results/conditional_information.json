@@ -1,0 +1,1436 @@
+{
+  "status": "post_result_exploratory",
+  "caution": "Post-result exploratory diagnostic. The frozen binary labels are retained for arithmetic only; guide-FDR audit semantics remain unvalidated. These calculations do not establish biological replication or a survival-function tradeoff.",
+  "definition": "T is total overlap across independent fixed-margin strata; a common theta tilts each stratum Fisher noncentral hypergeometric distribution.",
+  "criterion": "Equal-tail exact 95% lower limit > 1, equivalently inclusive P_theta=1(T >= observed) < 0.025. The inequality is strict.",
+  "probability_interpretation": "Model criterion probability for these already observed fixed margins. This is not prospective experimental, donor-level, or clinical power and does not validate the labels or the common-OR model.",
+  "n_strata": 20,
+  "n_informative_strata": 12,
+  "n_genes": 12184,
+  "n_exposed": 285,
+  "n_labeled_outcome": 479,
+  "observed_overlap": 14,
+  "null_expected_overlap": 11.518254596501295,
+  "null_variance_overlap": 10.737779376919843,
+  "null_sd_overlap": 3.2768551046574887,
+  "minimum_overlap_for_criterion": 19,
+  "additional_overlaps_relative_to_observed": 5,
+  "null_upper_tail_at_threshold": 0.022233662418668518,
+  "null_upper_tail_one_below_threshold": 0.04052227264954877,
+  "criterion_probabilities": [
+    {
+      "common_odds_ratio": 1.0,
+      "expected_total_overlap": 11.518254596501297,
+      "criterion_probability": 0.022233662418668514
+    },
+    {
+      "common_odds_ratio": 1.5,
+      "expected_total_overlap": 16.71573761484998,
+      "criterion_probability": 0.31330341248220683
+    },
+    {
+      "common_odds_ratio": 2.0,
+      "expected_total_overlap": 21.596516326419696,
+      "criterion_probability": 0.7571142567590063
+    }
+  ],
+  "primary_independent_inference": {
+    "conditional_mle": 1.2347165863605967,
+    "ci_lower": 0.6597371302935647,
+    "ci_upper": 2.1335791624600806,
+    "p_enrichment": 0.26340922779500925
+  },
+  "null_distribution": [
+    {
+      "total_overlap": 0,
+      "probability": 6.574381708752803e-06,
+      "inclusive_upper_tail": 1.0000000000000002
+    },
+    {
+      "total_overlap": 1,
+      "probability": 8.133926020811992e-05,
+      "inclusive_upper_tail": 0.9999934256182914
+    },
+    {
+      "total_overlap": 2,
+      "probability": 0.0005000963196869554,
+      "inclusive_upper_tail": 0.9999120863580833
+    },
+    {
+      "total_overlap": 3,
+      "probability": 0.002037261366118598,
+      "inclusive_upper_tail": 0.9994119900383963
+    },
+    {
+      "total_overlap": 4,
+      "probability": 0.006186211008928999,
+      "inclusive_upper_tail": 0.9973747286722777
+    },
+    {
+      "total_overlap": 5,
+      "probability": 0.014935128986917293,
+      "inclusive_upper_tail": 0.9911885176633487
+    },
+    {
+      "total_overlap": 6,
+      "probability": 0.029862135067925424,
+      "inclusive_upper_tail": 0.9762533886764314
+    },
+    {
+      "total_overlap": 7,
+      "probability": 0.050861287759179245,
+      "inclusive_upper_tail": 0.946391253608506
+    },
+    {
+      "total_overlap": 8,
+      "probability": 0.07532788611985736,
+      "inclusive_upper_tail": 0.8955299658493268
+    },
+    {
+      "total_overlap": 9,
+      "probability": 0.09855030505479898,
+      "inclusive_upper_tail": 0.8202020797294693
+    },
+    {
+      "total_overlap": 10,
+      "probability": 0.1153138059602061,
+      "inclusive_upper_tail": 0.7216517746746703
+    },
+    {
+      "total_overlap": 11,
+      "probability": 0.1218941509446775,
+      "inclusive_upper_tail": 0.6063379687144642
+    },
+    {
+      "total_overlap": 12,
+      "probability": 0.11737051067404325,
+      "inclusive_upper_tail": 0.48444381776978673
+    },
+    {
+      "total_overlap": 13,
+      "probability": 0.10366407930073425,
+      "inclusive_upper_tail": 0.3670733070957435
+    },
+    {
+      "total_overlap": 14,
+      "probability": 0.08448123945383941,
+      "inclusive_upper_tail": 0.26340922779500925
+    },
+    {
+      "total_overlap": 15,
+      "probability": 0.06385110531477324,
+      "inclusive_upper_tail": 0.17892798834116985
+    },
+    {
+      "total_overlap": 16,
+      "probability": 0.04495512142868346,
+      "inclusive_upper_tail": 0.1150768830263966
+    },
+    {
+      "total_overlap": 17,
+      "probability": 0.029599488948164377,
+      "inclusive_upper_tail": 0.07012176159771315
+    },
+    {
+      "total_overlap": 18,
+      "probability": 0.01828861023088025,
+      "inclusive_upper_tail": 0.04052227264954877
+    },
+    {
+      "total_overlap": 19,
+      "probability": 0.010636601410272966,
+      "inclusive_upper_tail": 0.022233662418668518
+    },
+    {
+      "total_overlap": 20,
+      "probability": 0.005839116420720626,
+      "inclusive_upper_tail": 0.011597061008395554
+    },
+    {
+      "total_overlap": 21,
+      "probability": 0.003033137899099535,
+      "inclusive_upper_tail": 0.005757944587674927
+    },
+    {
+      "total_overlap": 22,
+      "probability": 0.0014942229369657248,
+      "inclusive_upper_tail": 0.0027248066885753918
+    },
+    {
+      "total_overlap": 23,
+      "probability": 0.0006995303471491629,
+      "inclusive_upper_tail": 0.001230583751609667
+    },
+    {
+      "total_overlap": 24,
+      "probability": 0.00031180191732136254,
+      "inclusive_upper_tail": 0.0005310534044605041
+    },
+    {
+      "total_overlap": 25,
+      "probability": 0.0001325494780218564,
+      "inclusive_upper_tail": 0.00021925148713914158
+    },
+    {
+      "total_overlap": 26,
+      "probability": 5.38258571765452e-05,
+      "inclusive_upper_tail": 8.670200911728519e-05
+    },
+    {
+      "total_overlap": 27,
+      "probability": 2.0909886448368755e-05,
+      "inclusive_upper_tail": 3.287615194073998e-05
+    },
+    {
+      "total_overlap": 28,
+      "probability": 7.781215187192173e-06,
+      "inclusive_upper_tail": 1.1966265492371228e-05
+    },
+    {
+      "total_overlap": 29,
+      "probability": 2.7773047002697078e-06,
+      "inclusive_upper_tail": 4.185050305179056e-06
+    },
+    {
+      "total_overlap": 30,
+      "probability": 9.518919124387829e-07,
+      "inclusive_upper_tail": 1.4077456049093487e-06
+    },
+    {
+      "total_overlap": 31,
+      "probability": 3.136269912295629e-07,
+      "inclusive_upper_tail": 4.558536924705658e-07
+    },
+    {
+      "total_overlap": 32,
+      "probability": 9.943604774627673e-08,
+      "inclusive_upper_tail": 1.4222670124100292e-07
+    },
+    {
+      "total_overlap": 33,
+      "probability": 3.036644374823084e-08,
+      "inclusive_upper_tail": 4.279065349472619e-08
+    },
+    {
+      "total_overlap": 34,
+      "probability": 8.940324496720042e-09,
+      "inclusive_upper_tail": 1.2424209746495346e-08
+    },
+    {
+      "total_overlap": 35,
+      "probability": 2.5397343523542073e-09,
+      "inclusive_upper_tail": 3.483885249775303e-09
+    },
+    {
+      "total_overlap": 36,
+      "probability": 6.966972578978379e-10,
+      "inclusive_upper_tail": 9.441508974210959e-10
+    },
+    {
+      "total_overlap": 37,
+      "probability": 1.8469124932421965e-10,
+      "inclusive_upper_tail": 2.474536395232579e-10
+    },
+    {
+      "total_overlap": 38,
+      "probability": 4.734810405739815e-11,
+      "inclusive_upper_tail": 6.276239019903827e-11
+    },
+    {
+      "total_overlap": 39,
+      "probability": 1.1746378676045995e-11,
+      "inclusive_upper_tail": 1.5414286141640127e-11
+    },
+    {
+      "total_overlap": 40,
+      "probability": 2.821800344848478e-12,
+      "inclusive_upper_tail": 3.667907465594131e-12
+    },
+    {
+      "total_overlap": 41,
+      "probability": 6.567967649517939e-13,
+      "inclusive_upper_tail": 8.461071207456525e-13
+    },
+    {
+      "total_overlap": 42,
+      "probability": 1.4820625996871537e-13,
+      "inclusive_upper_tail": 1.8931035579385864e-13
+    },
+    {
+      "total_overlap": 43,
+      "probability": 3.243911824400127e-14,
+      "inclusive_upper_tail": 4.110409582514328e-14
+    },
+    {
+      "total_overlap": 44,
+      "probability": 6.8906977328697886e-15,
+      "inclusive_upper_tail": 8.664977581142003e-15
+    },
+    {
+      "total_overlap": 45,
+      "probability": 1.4212258189558043e-15,
+      "inclusive_upper_tail": 1.7742798482722153e-15
+    },
+    {
+      "total_overlap": 46,
+      "probability": 2.847559554233156e-16,
+      "inclusive_upper_tail": 3.5305402931641106e-16
+    },
+    {
+      "total_overlap": 47,
+      "probability": 5.544816372563099e-17,
+      "inclusive_upper_tail": 6.829807389309546e-17
+    },
+    {
+      "total_overlap": 48,
+      "probability": 1.0497652541407226e-17,
+      "inclusive_upper_tail": 1.2849910167464474e-17
+    },
+    {
+      "total_overlap": 49,
+      "probability": 1.9331508113918847e-18,
+      "inclusive_upper_tail": 2.352257626057248e-18
+    },
+    {
+      "total_overlap": 50,
+      "probability": 3.4640003078233353e-19,
+      "inclusive_upper_tail": 4.191068146653632e-19
+    },
+    {
+      "total_overlap": 51,
+      "probability": 6.042151575855229e-20,
+      "inclusive_upper_tail": 7.270678388302968e-20
+    },
+    {
+      "total_overlap": 52,
+      "probability": 1.0262728391978622e-20,
+      "inclusive_upper_tail": 1.2285268124477389e-20
+    },
+    {
+      "total_overlap": 53,
+      "probability": 1.6980134819782593e-21,
+      "inclusive_upper_tail": 2.0225397324987663e-21
+    },
+    {
+      "total_overlap": 54,
+      "probability": 2.737599796477428e-22,
+      "inclusive_upper_tail": 3.245262505205069e-22
+    },
+    {
+      "total_overlap": 55,
+      "probability": 4.302164199367652e-23,
+      "inclusive_upper_tail": 5.076627087276409e-23
+    },
+    {
+      "total_overlap": 56,
+      "probability": 6.592109268545319e-24,
+      "inclusive_upper_tail": 7.744628879087566e-24
+    },
+    {
+      "total_overlap": 57,
+      "probability": 9.85165546493276e-25,
+      "inclusive_upper_tail": 1.1525196105422474e-24
+    },
+    {
+      "total_overlap": 58,
+      "probability": 1.4363607171321173e-25,
+      "inclusive_upper_tail": 1.6735406404897132e-25
+    },
+    {
+      "total_overlap": 59,
+      "probability": 2.0436415068943546e-26,
+      "inclusive_upper_tail": 2.3717992335759587e-26
+    },
+    {
+      "total_overlap": 60,
+      "probability": 2.8382180488647443e-27,
+      "inclusive_upper_tail": 3.28157726681604e-27
+    },
+    {
+      "total_overlap": 61,
+      "probability": 3.8485343494721893e-28,
+      "inclusive_upper_tail": 4.433592179512961e-28
+    },
+    {
+      "total_overlap": 62,
+      "probability": 5.096338042964303e-29,
+      "inclusive_upper_tail": 5.850578300407715e-29
+    },
+    {
+      "total_overlap": 63,
+      "probability": 6.59227282197723e-30,
+      "inclusive_upper_tail": 7.54240257443412e-30
+    },
+    {
+      "total_overlap": 64,
+      "probability": 8.331503148439797e-31,
+      "inclusive_upper_tail": 9.501297524568903e-31
+    },
+    {
+      "total_overlap": 65,
+      "probability": 1.0290025443493767e-31,
+      "inclusive_upper_tail": 1.1697943761291065e-31
+    },
+    {
+      "total_overlap": 66,
+      "probability": 1.2422377531788466e-32,
+      "inclusive_upper_tail": 1.407918317797299e-32
+    },
+    {
+      "total_overlap": 67,
+      "probability": 1.4661394200306333e-33,
+      "inclusive_upper_tail": 1.656805646184526e-33
+    },
+    {
+      "total_overlap": 68,
+      "probability": 1.6920457273670413e-34,
+      "inclusive_upper_tail": 1.9066622615389279e-34
+    },
+    {
+      "total_overlap": 69,
+      "probability": 1.909836796913834e-35,
+      "inclusive_upper_tail": 2.146165341718866e-35
+    },
+    {
+      "total_overlap": 70,
+      "probability": 2.1086572051900356e-36,
+      "inclusive_upper_tail": 2.3632854480503218e-36
+    },
+    {
+      "total_overlap": 71,
+      "probability": 2.277806322450169e-37,
+      "inclusive_upper_tail": 2.5462824286028617e-37
+    },
+    {
+      "total_overlap": 72,
+      "probability": 2.407695685135075e-38,
+      "inclusive_upper_tail": 2.6847610615269263e-38
+    },
+    {
+      "total_overlap": 73,
+      "probability": 2.490753714556132e-39,
+      "inclusive_upper_tail": 2.7706537639185095e-39
+    },
+    {
+      "total_overlap": 74,
+      "probability": 2.522158412798206e-40,
+      "inclusive_upper_tail": 2.799000493623772e-40
+    },
+    {
+      "total_overlap": 75,
+      "probability": 2.500299211128785e-41,
+      "inclusive_upper_tail": 2.768420808255658e-41
+    },
+    {
+      "total_overlap": 76,
+      "probability": 2.4269067433973644e-42,
+      "inclusive_upper_tail": 2.681215971268733e-42
+    },
+    {
+      "total_overlap": 77,
+      "probability": 2.3068372172668965e-43,
+      "inclusive_upper_tail": 2.5430922787136837e-43
+    },
+    {
+      "total_overlap": 78,
+      "probability": 2.1475474213251359e-44,
+      "inclusive_upper_tail": 2.3625506144678733e-44
+    },
+    {
+      "total_overlap": 79,
+      "probability": 1.9583382894538487e-45,
+      "inclusive_upper_tail": 2.1500319314273725e-45
+    },
+    {
+      "total_overlap": 80,
+      "probability": 1.7494722423161646e-46,
+      "inclusive_upper_tail": 1.9169364197352377e-46
+    },
+    {
+      "total_overlap": 81,
+      "probability": 1.5312784091619632e-47,
+      "inclusive_upper_tail": 1.67464177419073e-47
+    },
+    {
+      "total_overlap": 82,
+      "probability": 1.3133503215145447e-48,
+      "inclusive_upper_tail": 1.43363365028767e-48
+    },
+    {
+      "total_overlap": 83,
+      "probability": 1.1039162834772524e-49,
+      "inclusive_upper_tail": 1.2028332877312526e-49
+    },
+    {
+      "total_overlap": 84,
+      "probability": 9.094292755187259e-51,
+      "inclusive_upper_tail": 9.891700425400011e-51
+    },
+    {
+      "total_overlap": 85,
+      "probability": 7.34387740474704e-52,
+      "inclusive_upper_tail": 7.974076702127519e-52
+    },
+    {
+      "total_overlap": 86,
+      "probability": 5.813671216027525e-53,
+      "inclusive_upper_tail": 6.301992973804785e-53
+    },
+    {
+      "total_overlap": 87,
+      "probability": 4.512190142845058e-54,
+      "inclusive_upper_tail": 4.883217577772607e-54
+    },
+    {
+      "total_overlap": 88,
+      "probability": 3.433823794680538e-55,
+      "inclusive_upper_tail": 3.710274349275487e-55
+    },
+    {
+      "total_overlap": 89,
+      "probability": 2.562492826161789e-56,
+      "inclusive_upper_tail": 2.7645055459494915e-56
+    },
+    {
+      "total_overlap": 90,
+      "probability": 1.8753411418023277e-57,
+      "inclusive_upper_tail": 2.020127197877028e-57
+    },
+    {
+      "total_overlap": 91,
+      "probability": 1.3460724204246178e-58,
+      "inclusive_upper_tail": 1.4478605607470047e-58
+    },
+    {
+      "total_overlap": 92,
+      "probability": 9.476834572309391e-60,
+      "inclusive_upper_tail": 1.0178814032238697e-59
+    },
+    {
+      "total_overlap": 93,
+      "probability": 6.54485156056918e-61,
+      "inclusive_upper_tail": 7.01979459929306e-61
+    },
+    {
+      "total_overlap": 94,
+      "probability": 4.434161989968032e-62,
+      "inclusive_upper_tail": 4.749430387238794e-62
+    },
+    {
+      "total_overlap": 95,
+      "probability": 2.947344782504139e-63,
+      "inclusive_upper_tail": 3.152683972707617e-63
+    },
+    {
+      "total_overlap": 96,
+      "probability": 1.922158228768844e-64,
+      "inclusive_upper_tail": 2.05339190203478e-64
+    },
+    {
+      "total_overlap": 97,
+      "probability": 1.2300311746982628e-65,
+      "inclusive_upper_tail": 1.3123367326593592e-65
+    },
+    {
+      "total_overlap": 98,
+      "probability": 7.723972607011183e-67,
+      "inclusive_upper_tail": 8.230555796109649e-67
+    },
+    {
+      "total_overlap": 99,
+      "probability": 4.759821394958254e-68,
+      "inclusive_upper_tail": 5.065831890984655e-68
+    },
+    {
+      "total_overlap": 100,
+      "probability": 2.8786741858269817e-69,
+      "inclusive_upper_tail": 3.060104960264013e-69
+    },
+    {
+      "total_overlap": 101,
+      "probability": 1.708723584139764e-70,
+      "inclusive_upper_tail": 1.8143077443703144e-70
+    },
+    {
+      "total_overlap": 102,
+      "probability": 9.955269468592667e-72,
+      "inclusive_upper_tail": 1.0558416023055038e-71
+    },
+    {
+      "total_overlap": 103,
+      "probability": 5.693240877420046e-73,
+      "inclusive_upper_tail": 6.031465544623717e-73
+    },
+    {
+      "total_overlap": 104,
+      "probability": 3.1960520429159778e-74,
+      "inclusive_upper_tail": 3.3822466720367036e-74
+    },
+    {
+      "total_overlap": 105,
+      "probability": 1.7613160300695653e-75,
+      "inclusive_upper_tail": 1.8619462912072567e-75
+    },
+    {
+      "total_overlap": 106,
+      "probability": 9.529065999757077e-77,
+      "inclusive_upper_tail": 1.0063026113769151e-76
+    },
+    {
+      "total_overlap": 107,
+      "probability": 5.061421039864218e-78,
+      "inclusive_upper_tail": 5.339601140120738e-78
+    },
+    {
+      "total_overlap": 108,
+      "probability": 2.6395033718683757e-79,
+      "inclusive_upper_tail": 2.781801002565198e-79
+    },
+    {
+      "total_overlap": 109,
+      "probability": 1.3515036234135698e-80,
+      "inclusive_upper_tail": 1.4229763069682177e-80
+    },
+    {
+      "total_overlap": 110,
+      "probability": 6.794760439073867e-82,
+      "inclusive_upper_tail": 7.147268355464787e-82
+    },
+    {
+      "total_overlap": 111,
+      "probability": 3.354353539560519e-83,
+      "inclusive_upper_tail": 3.5250791639092014e-83
+    },
+    {
+      "total_overlap": 112,
+      "probability": 1.6260586016872498e-84,
+      "inclusive_upper_tail": 1.7072562434868242e-84
+    },
+    {
+      "total_overlap": 113,
+      "probability": 7.740522581677178e-86,
+      "inclusive_upper_tail": 8.119764179957439e-86
+    },
+    {
+      "total_overlap": 114,
+      "probability": 3.618464353437056e-87,
+      "inclusive_upper_tail": 3.792415982802609e-87
+    },
+    {
+      "total_overlap": 115,
+      "probability": 1.6611566732688715e-88,
+      "inclusive_upper_tail": 1.7395162936555285e-88
+    },
+    {
+      "total_overlap": 116,
+      "probability": 7.4892907088644004e-90,
+      "inclusive_upper_tail": 7.835962038665692e-90
+    },
+    {
+      "total_overlap": 117,
+      "probability": 3.316082078200473e-91,
+      "inclusive_upper_tail": 3.4667132980129136e-91
+    },
+    {
+      "total_overlap": 118,
+      "probability": 1.4420297501815062e-92,
+      "inclusive_upper_tail": 1.5063121981244056e-92
+    },
+    {
+      "total_overlap": 119,
+      "probability": 6.15880715807916e-94,
+      "inclusive_upper_tail": 6.428244794289952e-94
+    },
+    {
+      "total_overlap": 120,
+      "probability": 2.5834538082709184e-95,
+      "inclusive_upper_tail": 2.6943763621079236e-95
+    },
+    {
+      "total_overlap": 121,
+      "probability": 1.0643733395221264e-96,
+      "inclusive_upper_tail": 1.1092255383700525e-96
+    },
+    {
+      "total_overlap": 122,
+      "probability": 4.307082260148153e-98,
+      "inclusive_upper_tail": 4.485219884792611e-98
+    },
+    {
+      "total_overlap": 123,
+      "probability": 1.711883318471398e-99,
+      "inclusive_upper_tail": 1.7813762464445855e-99
+    },
+    {
+      "total_overlap": 124,
+      "probability": 6.683010168405676e-101,
+      "inclusive_upper_tail": 6.949292797318752e-101
+    },
+    {
+      "total_overlap": 125,
+      "probability": 2.562603654273308e-102,
+      "inclusive_upper_tail": 2.66282628913076e-102
+    },
+    {
+      "total_overlap": 126,
+      "probability": 9.651742949743817e-104,
+      "inclusive_upper_tail": 1.0022263485745204e-103
+    },
+    {
+      "total_overlap": 127,
+      "probability": 3.570655198078729e-105,
+      "inclusive_upper_tail": 3.7052053600138684e-105
+    },
+    {
+      "total_overlap": 128,
+      "probability": 1.2975080684342639e-106,
+      "inclusive_upper_tail": 1.3455016193513944e-106
+    },
+    {
+      "total_overlap": 129,
+      "probability": 4.631200487308413e-108,
+      "inclusive_upper_tail": 4.79935509171306e-108
+    },
+    {
+      "total_overlap": 130,
+      "probability": 1.6236749580586988e-109,
+      "inclusive_upper_tail": 1.6815460440464695e-109
+    },
+    {
+      "total_overlap": 131,
+      "probability": 5.5914763168375525e-111,
+      "inclusive_upper_tail": 5.787108598777076e-111
+    },
+    {
+      "total_overlap": 132,
+      "probability": 1.8913631618188458e-112,
+      "inclusive_upper_tail": 1.9563228193952317e-112
+    },
+    {
+      "total_overlap": 133,
+      "probability": 6.284096075095533e-114,
+      "inclusive_upper_tail": 6.495965757638585e-114
+    },
+    {
+      "total_overlap": 134,
+      "probability": 2.050821391269661e-115,
+      "inclusive_upper_tail": 2.118696825430522e-115
+    },
+    {
+      "total_overlap": 135,
+      "probability": 6.573958173645787e-117,
+      "inclusive_upper_tail": 6.787543416086112e-117
+    },
+    {
+      "total_overlap": 136,
+      "probability": 2.0698378163359244e-118,
+      "inclusive_upper_tail": 2.1358524244032384e-118
+    },
+    {
+      "total_overlap": 137,
+      "probability": 6.401053441760389e-120,
+      "inclusive_upper_tail": 6.601460806731405e-120
+    },
+    {
+      "total_overlap": 138,
+      "probability": 1.9443170290372386e-121,
+      "inclusive_upper_tail": 2.0040736497101563e-121
+    },
+    {
+      "total_overlap": 139,
+      "probability": 5.800657142643737e-123,
+      "inclusive_upper_tail": 5.9756620672917786e-123
+    },
+    {
+      "total_overlap": 140,
+      "probability": 1.699710913785742e-124,
+      "inclusive_upper_tail": 1.7500492464804185e-124
+    },
+    {
+      "total_overlap": 141,
+      "probability": 4.891625479564826e-126,
+      "inclusive_upper_tail": 5.033833269467645e-126
+    },
+    {
+      "total_overlap": 142,
+      "probability": 1.3826217319627844e-127,
+      "inclusive_upper_tail": 1.4220778990281881e-127
+    },
+    {
+      "total_overlap": 143,
+      "probability": 3.838103072079251e-129,
+      "inclusive_upper_tail": 3.9456167065403797e-129
+    },
+    {
+      "total_overlap": 144,
+      "probability": 1.0463650913419223e-130,
+      "inclusive_upper_tail": 1.0751363446112881e-130
+    },
+    {
+      "total_overlap": 145,
+      "probability": 2.8015135763532416e-132,
+      "inclusive_upper_tail": 2.877125326936578e-132
+    },
+    {
+      "total_overlap": 146,
+      "probability": 7.366036536723031e-134,
+      "inclusive_upper_tail": 7.561175058333653e-134
+    },
+    {
+      "total_overlap": 147,
+      "probability": 1.9019305705185924e-135,
+      "inclusive_upper_tail": 1.9513852161062177e-135
+    },
+    {
+      "total_overlap": 148,
+      "probability": 4.822390100437721e-137,
+      "inclusive_upper_tail": 4.945464558762541e-137
+    },
+    {
+      "total_overlap": 149,
+      "probability": 1.2006692021881842e-138,
+      "inclusive_upper_tail": 1.2307445832482034e-138
+    },
+    {
+      "total_overlap": 150,
+      "probability": 2.9353739501805464e-140,
+      "inclusive_upper_tail": 3.0075381060019115e-140
+    },
+    {
+      "total_overlap": 151,
+      "probability": 7.046402181033007e-142,
+      "inclusive_upper_tail": 7.216415582136527e-142
+    },
+    {
+      "total_overlap": 152,
+      "probability": 1.6608080605308321e-143,
+      "inclusive_upper_tail": 1.7001340110351925e-143
+    },
+    {
+      "total_overlap": 153,
+      "probability": 3.843286678199725e-145,
+      "inclusive_upper_tail": 3.93259505043604e-145
+    },
+    {
+      "total_overlap": 154,
+      "probability": 8.731722400400029e-147,
+      "inclusive_upper_tail": 8.930837223631487e-147
+    },
+    {
+      "total_overlap": 155,
+      "probability": 1.947567526909289e-148,
+      "inclusive_upper_tail": 1.991148232314583e-148
+    },
+    {
+      "total_overlap": 156,
+      "probability": 4.2644342729261016e-150,
+      "inclusive_upper_tail": 4.358070540529393e-150
+    },
+    {
+      "total_overlap": 157,
+      "probability": 9.1661426358524e-152,
+      "inclusive_upper_tail": 9.363626760329149e-152
+    },
+    {
+      "total_overlap": 158,
+      "probability": 1.9339588094809576e-153,
+      "inclusive_upper_tail": 1.9748412447674898e-153
+    },
+    {
+      "total_overlap": 159,
+      "probability": 4.005175262748805e-155,
+      "inclusive_upper_tail": 4.088243528653231e-155
+    },
+    {
+      "total_overlap": 160,
+      "probability": 8.141171874722732e-157,
+      "inclusive_upper_tail": 8.306826590442589e-157
+    },
+    {
+      "total_overlap": 161,
+      "probability": 1.6241267631728758e-158,
+      "inclusive_upper_tail": 1.6565471571985721e-158
+    },
+    {
+      "total_overlap": 162,
+      "probability": 3.1797730770724195e-160,
+      "inclusive_upper_tail": 3.242039402569635e-160
+    },
+    {
+      "total_overlap": 163,
+      "probability": 6.109282749165338e-162,
+      "inclusive_upper_tail": 6.226632549721503e-162
+    },
+    {
+      "total_overlap": 164,
+      "probability": 1.1517970727696898e-163,
+      "inclusive_upper_tail": 1.1734980055616511e-163
+    },
+    {
+      "total_overlap": 165,
+      "probability": 2.1307189498031356e-165,
+      "inclusive_upper_tail": 2.170093279196131e-165
+    },
+    {
+      "total_overlap": 166,
+      "probability": 3.8673427113160034e-167,
+      "inclusive_upper_tail": 3.9374329392995324e-167
+    },
+    {
+      "total_overlap": 167,
+      "probability": 6.886622881977961e-169,
+      "inclusive_upper_tail": 7.009022798352872e-169
+    },
+    {
+      "total_overlap": 168,
+      "probability": 1.2030313617300178e-170,
+      "inclusive_upper_tail": 1.223999163749098e-170
+    },
+    {
+      "total_overlap": 169,
+      "probability": 2.0615479353908175e-172,
+      "inclusive_upper_tail": 2.0967802019080203e-172
+    },
+    {
+      "total_overlap": 170,
+      "probability": 3.465162132219675e-174,
+      "inclusive_upper_tail": 3.523226651720294e-174
+    },
+    {
+      "total_overlap": 171,
+      "probability": 5.7126030310817674e-176,
+      "inclusive_upper_tail": 5.806451950061885e-176
+    },
+    {
+      "total_overlap": 172,
+      "probability": 9.236140726690122e-178,
+      "inclusive_upper_tail": 9.384891898011719e-178
+    },
+    {
+      "total_overlap": 173,
+      "probability": 1.4643927922066786e-179,
+      "inclusive_upper_tail": 1.4875117132159721e-179
+    },
+    {
+      "total_overlap": 174,
+      "probability": 2.2766620734010833e-181,
+      "inclusive_upper_tail": 2.3118921009293604e-181
+    },
+    {
+      "total_overlap": 175,
+      "probability": 3.470369806656804e-183,
+      "inclusive_upper_tail": 3.523002752827702e-183
+    },
+    {
+      "total_overlap": 176,
+      "probability": 5.186211110222895e-185,
+      "inclusive_upper_tail": 5.263294617089828e-185
+    },
+    {
+      "total_overlap": 177,
+      "probability": 7.597692665577755e-187,
+      "inclusive_upper_tail": 7.708350686693324e-187
+    },
+    {
+      "total_overlap": 178,
+      "probability": 1.0910105458161124e-188,
+      "inclusive_upper_tail": 1.106580211155688e-188
+    },
+    {
+      "total_overlap": 179,
+      "probability": 1.5354977925785544e-190,
+      "inclusive_upper_tail": 1.5569665339575583e-190
+    },
+    {
+      "total_overlap": 180,
+      "probability": 2.117866025890621e-192,
+      "inclusive_upper_tail": 2.146874137900374e-192
+    },
+    {
+      "total_overlap": 181,
+      "probability": 2.862407667613723e-194,
+      "inclusive_upper_tail": 2.9008112009752916e-194
+    },
+    {
+      "total_overlap": 182,
+      "probability": 3.7905436736110155e-196,
+      "inclusive_upper_tail": 3.840353336156849e-196
+    },
+    {
+      "total_overlap": 183,
+      "probability": 4.917681789808654e-198,
+      "inclusive_upper_tail": 4.98096625458336e-198
+    },
+    {
+      "total_overlap": 184,
+      "probability": 6.249692839107147e-200,
+      "inclusive_upper_tail": 6.328446477470581e-200
+    },
+    {
+      "total_overlap": 185,
+      "probability": 7.779383666062415e-202,
+      "inclusive_upper_tail": 7.875363836343358e-202
+    },
+    {
+      "total_overlap": 186,
+      "probability": 9.483472178602931e-204,
+      "inclusive_upper_tail": 9.598017028094267e-204
+    },
+    {
+      "total_overlap": 187,
+      "probability": 1.1320641557334093e-205,
+      "inclusive_upper_tail": 1.1454484949133523e-205
+    },
+    {
+      "total_overlap": 188,
+      "probability": 1.3231234630016082e-207,
+      "inclusive_upper_tail": 1.3384339179942921e-207
+    },
+    {
+      "total_overlap": 189,
+      "probability": 1.5139023817902233e-209,
+      "inclusive_upper_tail": 1.531045499268383e-209
+    },
+    {
+      "total_overlap": 190,
+      "probability": 1.6955254585896002e-211,
+      "inclusive_upper_tail": 1.7143117478159554e-211
+    },
+    {
+      "total_overlap": 191,
+      "probability": 1.8584833869828833e-213,
+      "inclusive_upper_tail": 1.878628922635519e-213
+    },
+    {
+      "total_overlap": 192,
+      "probability": 1.9934168034101535e-215,
+      "inclusive_upper_tail": 2.014553565263604e-215
+    },
+    {
+      "total_overlap": 193,
+      "probability": 2.091981510417808e-217,
+      "inclusive_upper_tail": 2.1136761853450626e-217
+    },
+    {
+      "total_overlap": 194,
+      "probability": 2.1476876820978636e-219,
+      "inclusive_upper_tail": 2.1694674927254615e-219
+    },
+    {
+      "total_overlap": 195,
+      "probability": 2.1565979756473302e-221,
+      "inclusive_upper_tail": 2.1779810627597877e-221
+    },
+    {
+      "total_overlap": 196,
+      "probability": 2.1177815460591584e-223,
+      "inclusive_upper_tail": 2.1383087112457546e-223
+    },
+    {
+      "total_overlap": 197,
+      "probability": 2.033452163902435e-225,
+      "inclusive_upper_tail": 2.052716518659635e-225
+    },
+    {
+      "total_overlap": 198,
+      "probability": 1.9087641478594494e-227,
+      "inclusive_upper_tail": 1.9264354757199864e-227
+    },
+    {
+      "total_overlap": 199,
+      "probability": 1.751291406206264e-229,
+      "inclusive_upper_tail": 1.7671327860536968e-229
+    },
+    {
+      "total_overlap": 200,
+      "probability": 1.5702626556310196e-231,
+      "inclusive_upper_tail": 1.584137984743266e-231
+    },
+    {
+      "total_overlap": 201,
+      "probability": 1.3756606135483712e-233,
+      "inclusive_upper_tail": 1.3875329112246123e-233
+    },
+    {
+      "total_overlap": 202,
+      "probability": 1.1773082187926582e-235,
+      "inclusive_upper_tail": 1.1872297676241065e-235
+    },
+    {
+      "total_overlap": 203,
+      "probability": 9.840585836166543e-238,
+      "inclusive_upper_tail": 9.921548831448297e-238
+    },
+    {
+      "total_overlap": 204,
+      "probability": 8.031799145476348e-240,
+      "inclusive_upper_tail": 8.096299528175344e-240
+    },
+    {
+      "total_overlap": 205,
+      "probability": 6.399883780168112e-242,
+      "inclusive_upper_tail": 6.450038269899593e-242
+    },
+    {
+      "total_overlap": 206,
+      "probability": 4.97739244967428e-244,
+      "inclusive_upper_tail": 5.015448973148135e-244
+    },
+    {
+      "total_overlap": 207,
+      "probability": 3.7774804034208545e-246,
+      "inclusive_upper_tail": 3.805652347385533e-246
+    },
+    {
+      "total_overlap": 208,
+      "probability": 2.7968536875893984e-248,
+      "inclusive_upper_tail": 2.8171943964678576e-248
+    },
+    {
+      "total_overlap": 209,
+      "probability": 2.0197501155392452e-250,
+      "inclusive_upper_tail": 2.03407088784591e-250
+    },
+    {
+      "total_overlap": 210,
+      "probability": 1.4222483602986542e-252,
+      "inclusive_upper_tail": 1.4320772306664765e-252
+    },
+    {
+      "total_overlap": 211,
+      "probability": 9.763125881244696e-255,
+      "inclusive_upper_tail": 9.828870367822346e-255
+    },
+    {
+      "total_overlap": 212,
+      "probability": 6.531602564879048e-257,
+      "inclusive_upper_tail": 6.574448657765083e-257
+    },
+    {
+      "total_overlap": 213,
+      "probability": 4.257411568337917e-259,
+      "inclusive_upper_tail": 4.284609288603492e-259
+    },
+    {
+      "total_overlap": 214,
+      "probability": 2.7029610927905413e-261,
+      "inclusive_upper_tail": 2.7197720265575446e-261
+    },
+    {
+      "total_overlap": 215,
+      "probability": 1.67097867454167e-263,
+      "inclusive_upper_tail": 1.681093376700316e-263
+    },
+    {
+      "total_overlap": 216,
+      "probability": 1.0055481242501442e-265,
+      "inclusive_upper_tail": 1.0114702158646091e-265
+    },
+    {
+      "total_overlap": 217,
+      "probability": 5.888361994891946e-268,
+      "inclusive_upper_tail": 5.922091614464928e-268
+    },
+    {
+      "total_overlap": 218,
+      "probability": 3.3542805311574307e-270,
+      "inclusive_upper_tail": 3.372961957298171e-270
+    },
+    {
+      "total_overlap": 219,
+      "probability": 1.8580845831168853e-272,
+      "inclusive_upper_tail": 1.8681426140740067e-272
+    },
+    {
+      "total_overlap": 220,
+      "probability": 1.0005410312002851e-274,
+      "inclusive_upper_tail": 1.0058030957121404e-274
+    },
+    {
+      "total_overlap": 221,
+      "probability": 5.235324044324768e-277,
+      "inclusive_upper_tail": 5.262064511855274e-277
+    },
+    {
+      "total_overlap": 222,
+      "probability": 2.6608528309410435e-279,
+      "inclusive_upper_tail": 2.6740467530506187e-279
+    },
+    {
+      "total_overlap": 223,
+      "probability": 1.3130741169012017e-281,
+      "inclusive_upper_tail": 1.3193922109575091e-281
+    },
+    {
+      "total_overlap": 224,
+      "probability": 6.28874373003233e-284,
+      "inclusive_upper_tail": 6.318094056307482e-284
+    },
+    {
+      "total_overlap": 225,
+      "probability": 2.921811951022907e-286,
+      "inclusive_upper_tail": 2.9350326275151804e-286
+    },
+    {
+      "total_overlap": 226,
+      "probability": 1.316296014513907e-288,
+      "inclusive_upper_tail": 1.3220676492273515e-288
+    },
+    {
+      "total_overlap": 227,
+      "probability": 5.747226855343001e-291,
+      "inclusive_upper_tail": 5.771634713444425e-291
+    },
+    {
+      "total_overlap": 228,
+      "probability": 2.430792310819371e-293,
+      "inclusive_upper_tail": 2.4407858101424662e-293
+    },
+    {
+      "total_overlap": 229,
+      "probability": 9.953905858961623e-296,
+      "inclusive_upper_tail": 9.9934993230951e-296
+    },
+    {
+      "total_overlap": 230,
+      "probability": 3.944176010403371e-298,
+      "inclusive_upper_tail": 3.959346413347661e-298
+    },
+    {
+      "total_overlap": 231,
+      "probability": 1.511422366524743e-300,
+      "inclusive_upper_tail": 1.5170402944290418e-300
+    },
+    {
+      "total_overlap": 232,
+      "probability": 5.5978330185419567e-303,
+      "inclusive_upper_tail": 5.617927904298901e-303
+    },
+    {
+      "total_overlap": 233,
+      "probability": 2.002550541900801e-305,
+      "inclusive_upper_tail": 2.009488575694413e-305
+    },
+    {
+      "total_overlap": 234,
+      "probability": 6.91492777307935e-308,
+      "inclusive_upper_tail": 6.938033793612152e-308
+    },
+    {
+      "total_overlap": 235,
+      "probability": 2.3031849851735e-310,
+      "inclusive_upper_tail": 2.3106020532801e-310
+    },
+    {
+      "total_overlap": 236,
+      "probability": 7.3941372062e-313,
+      "inclusive_upper_tail": 7.4170681066e-313
+    },
+    {
+      "total_overlap": 237,
+      "probability": 2.28626766e-315,
+      "inclusive_upper_tail": 2.29309004e-315
+    },
+    {
+      "total_overlap": 238,
+      "probability": 6.80287e-318,
+      "inclusive_upper_tail": 6.82238e-318
+    },
+    {
+      "total_overlap": 239,
+      "probability": 1.946e-320,
+      "inclusive_upper_tail": 1.951e-320
+    },
+    {
+      "total_overlap": 240,
+      "probability": 5e-323,
+      "inclusive_upper_tail": 5e-323
+    },
+    {
+      "total_overlap": 241,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 242,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 243,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 244,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 245,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 246,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 247,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 248,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 249,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 250,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 251,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 252,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 253,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 254,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 255,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 256,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 257,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 258,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 259,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 260,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 261,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 262,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 263,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 264,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 265,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 266,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 267,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 268,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 269,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 270,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 271,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 272,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 273,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    },
+    {
+      "total_overlap": 274,
+      "probability": 0.0,
+      "inclusive_upper_tail": 0.0
+    }
+  ],
+  "influence_interpretation": "All informative strata are omitted one at a time without redefining remaining strata or margins. Diagnostic selection or a preferred omitted stratum is not justified.",
+  "provenance": {
+    "inputs": {
+      "primary_genes.csv": "91f69dc23ac542bcc92686546f3dfd5a6ceb3262d8fc1fe4008a79e63ee45a7a",
+      "primary_strata.csv": "23e8443084dc4937d21730feee577263c2135c5658f0d12b622fe2a9a7845027"
+    },
+    "code_sha256": "1e1e05b99eb8fd45d7391a106aa7c40257524242e821403ddd348599e519f09e",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "checks": [
+      "Unique genes and finite paired LFCs",
+      "Every n,m,k,a rebuilt from primary genes",
+      "Convolved null mean and variance match analytic formulas",
+      "All exposed genes covered by positive fixed weights"
+    ]
+  }
+}

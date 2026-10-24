@@ -1,0 +1,69 @@
+{
+  "total": 427,
+  "common_coverage": 390,
+  "primary_eligible": 285,
+  "coverage_losses": 37,
+  "additional_primary_losses": 105,
+  "screen_evidence_status_counts": {
+    "No published directional call": 384,
+    "Screen measurement unavailable": 26,
+    "Published lower-content evidence": 15,
+    "Published higher-content evidence": 2
+  },
+  "evidence_by_primary_eligibility": [
+    {
+      "screen_evidence_status": "No published directional call",
+      "primary_eligibility_status": "Eligible",
+      "n": 269
+    },
+    {
+      "screen_evidence_status": "No published directional call",
+      "primary_eligibility_status": "Excluded",
+      "n": 115
+    },
+    {
+      "screen_evidence_status": "Published higher-content evidence",
+      "primary_eligibility_status": "Eligible",
+      "n": 2
+    },
+    {
+      "screen_evidence_status": "Published lower-content evidence",
+      "primary_eligibility_status": "Eligible",
+      "n": 14
+    },
+    {
+      "screen_evidence_status": "Published lower-content evidence",
+      "primary_eligibility_status": "Excluded",
+      "n": 1
+    },
+    {
+      "screen_evidence_status": "Screen measurement unavailable",
+      "primary_eligibility_status": "Excluded",
+      "n": 26
+    }
+  ],
+  "primary_lower_content_candidates": [
+    "RAD52",
+    "CREB3",
+    "C12orf29",
+    "UBE2C",
+    "EXOSC3",
+    "TM2D2",
+    "ZNF616",
+    "PEX13",
+    "COA5",
+    "SLC2A11",
+    "NCOA6",
+    "SLC8B1",
+    "PDS5A",
+    "SSR2"
+  ],
+  "excluded_with_published_lower_content": [
+    {
+      "gene": "NUPL1",
+      "eligibility_reason": "no_exact_expression_symbol"
+    }
+  ],
+  "primary_survival_fdr_lt005_lower_content": 4,
+  "guide_statistics_semantics": "S8 q threshold invalidated by saved integer coercion; selected S7 continuous probabilities provide bounded support. Missing guide probabilities unknown; original zero rules are historical diagnostics."
+}

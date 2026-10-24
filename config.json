@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "hypothesis": "conditional odds ratio of audited insulin decrease in survival-favoring knockouts exceeds one",
+  "survival": {
+    "minimum_guides": 3,
+    "exclude_prefix": "hsa-",
+    "fdr": 0.1,
+    "positive_beta": true
+  },
+  "insulin": {
+    "replicates": [
+      "r0",
+      "r1"
+    ],
+    "minimum_covered_guides": 3,
+    "minimum_count_sum_each_replicate": 20,
+    "directional_fdr": 0.1,
+    "minimum_directional_guides_each_replicate": 2,
+    "exclude_genes": [
+      "EGFP",
+      "LacZ",
+      "luciferase"
+    ]
+  },
+  "expression": {
+    "minimum_baseMean": 10,
+    "unique_symbol_required": true,
+    "source": "Rottner Table S5 CALCOCO2 silencing and control RNA experiment"
+  },
+  "join": "exact source symbols, trim surrounding whitespace only, no case folding or alias repair",
+  "strata": {
+    "expression_quintiles": 5,
+    "quantile_method": "linear",
+    "drop_duplicate_boundaries": true,
+    "survival_guides": [
+      "3-5",
+      "6+"
+    ],
+    "covered_insulin_guides": [
+      "3",
+      "4+"
+    ],
+    "assignment": "right-closed intervals including lowest; equivalent to pandas.qcut with duplicates=drop"
+  },
+  "inference": {
+    "estimate": "conditional maximum likelihood",
+    "interval": "two-sided equal-tailed exact conditional",
+    "confidence_level": 0.95,
+    "directional_test": "inclusive upper-tail at odds ratio one",
+    "success": "ci_lower > 1"
+  },
+  "sensitivity": [
+    {
+      "name": "no_expression",
+      "expression_minimum": null,
+      "expression_strata": false
+    },
+    {
+      "name": "expression_ge1",
+      "expression_minimum": 1
+    },
+    {
+      "name": "expression_ge100",
+      "expression_minimum": 100
+    },
+    {
+      "name": "survival_fdr005",
+      "survival_fdr": 0.05
+    },
+    {
+      "name": "three_directional_guides",
+      "directional_guides": 3
+    },
+    {
+      "name": "survival_harming",
+      "exposure": "negative_beta_fdr010"
+    },
+    {
+      "name": "positive_vs_negative",
+      "comparator": "negative_beta_fdr010"
+    },
+    {
+      "name": "threshold_free",
+      "diagnostic": "stratum-specific per-gene median insulin LFC distributions in each replicate; descriptive, not confirmatory"
+    }
+  ],
+  "implementation_clarifications_before_results": {
+    "valid_directional_guide": "nonmissing exact gene and guide key, r0/r1 suffix, finite LFC/FDR and control/treatment counts; unique key within replicate; no count-sum threshold for direction audit or medians",
+    "three_guide_sensitivity": "published directional hits failing the stricter three-guide audit remain unresolved and are excluded symmetrically, using the same failed-audit handling as primary",
+    "positive_vs_negative_strata": "use primary-U expression boundaries and coverage labels, then restrict to positive/negative hits",
+    "fisher_estimate": "report sample odds ratio and independent conditional maximum-likelihood estimate with exact conditional interval",
+    "external_functional_evidence": "not systematically assessed for individual candidates; record unknown, never infer from hit absence",
+    "sensitivity_quintiles": "Rebuild within each sensitivity universe; positive-vs-negative alone retains primary-U bins. FDR-only universe remains unchanged.",
+    "stronger_fixed_universe_diagnostic": "In addition to symmetric exclusions, secondary diagnostic retains primary U and sets L=1 only for published decreases satisfying >=3 directional guides per replicate; L=0 is absence of this stricter evidence, not preserved content."
+  }
+}

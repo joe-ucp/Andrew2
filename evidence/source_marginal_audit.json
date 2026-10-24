@@ -1,0 +1,708 @@
+{
+  "scope": "Source margins and eligibility only; no cross-screen overlap or association computed in this object.",
+  "survival_rows": 20708,
+  "survival_eligible": 18714,
+  "survival_positive_fdr_0_10": 427,
+  "survival_negative_fdr_0_10": 440,
+  "survival_duplicate_names": [],
+  "insulin_hit_labels": {
+    "Decrease": 518,
+    "Increase": 62
+  },
+  "insulin_guide_rows": 142180,
+  "insulin_rows_per_replicate": {
+    "0": 71090,
+    "1": 71090
+  },
+  "insulin_unique_gene_labels": 18056,
+  "insulin_coverage_eligible": 17597,
+  "guide_duplicate_keys": [],
+  "guide_gene_mismatches": [],
+  "invalid_guide_rows": [],
+  "expression_duplicate_names_count": 75,
+  "expression_duplicate_names": [
+    "5S_rRNA",
+    "5_8S_rRNA",
+    "7SK",
+    "ALG1L9P",
+    "ANAPC1P2",
+    "ARMCX5-GPRASP2",
+    "BMS1P4",
+    "CCDC39",
+    "CLCA4-AS1",
+    "CYB561D2",
+    "DGCR5",
+    "DNAJC9-AS1",
+    "DUXAP8",
+    "ELFN2",
+    "FAM153B",
+    "GABARAPL3",
+    "GOLGA8M",
+    "HERC2P7",
+    "ITFG2-AS1",
+    "KBTBD11-OT1",
+    "LINC00484",
+    "LINC00486",
+    "LINC01115",
+    "LINC01238",
+    "LINC01605",
+    "LINC02203",
+    "MATR3",
+    "Metazoa_SRP",
+    "PDE11A",
+    "PINX1",
+    "POLR2J3",
+    "POLR2J4",
+    "PRICKLE2-AS1",
+    "RAET1E-AS1",
+    "RGS5",
+    "RMRP",
+    "SCARNA4",
+    "SFTA3",
+    "SIGLEC5",
+    "SNORA16A",
+    "SNORA17B",
+    "SNORA50A",
+    "SNORA62",
+    "SNORA63",
+    "SNORA70",
+    "SNORA71",
+    "SNORA72",
+    "SNORA73",
+    "SNORA74",
+    "SNORA75",
+    "SNORD115",
+    "SNORD116",
+    "SNORD18",
+    "SNORD22",
+    "SNORD27",
+    "SNORD30",
+    "SNORD33",
+    "SNORD38B",
+    "SNORD39",
+    "SNORD3D",
+    "SNORD42",
+    "SNORD63",
+    "SNORD81",
+    "SPATA13",
+    "TBCE",
+    "TMSB15B",
+    "U1",
+    "U2",
+    "U3",
+    "U4",
+    "U6",
+    "U7",
+    "U8",
+    "Vault",
+    "Y_RNA"
+  ],
+  "directional_audit_failures": [
+    "TOMM6"
+  ],
+  "directional_audit_failure_details": {
+    "TOMM6": {
+      "label": "Decrease",
+      "positive_r0": 1,
+      "positive_r1": 3,
+      "negative_r0": 1,
+      "negative_r1": 1,
+      "baseMean": 0.0
+    }
+  },
+  "U0_before_direction_audit": 17276,
+  "U_primary": 12184,
+  "primary_survival_favoring_margin": 285,
+  "primary_decrease_margin": 479,
+  "SOCS1_survival": {
+    "beta": -0.47645,
+    "fdr": 0.04386,
+    "nguides": 6
+  },
+  "INS_content": {
+    "0": {
+      "median_lfc": 1.059285,
+      "positive_fdr_lt_0_10_guides": 3
+    },
+    "1": {
+      "median_lfc": 1.00272,
+      "positive_fdr_lt_0_10_guides": 3
+    }
+  },
+  "D3_crosscheck": {
+    "rows": 20708,
+    "D1_rows": 20708,
+    "same_gene_membership": true,
+    "numerical_tolerance": "relative 1e-12; absolute 1e-15",
+    "numerical_differences_count": 87,
+    "scientific_notation_rounding_count": 87,
+    "rounding_rule": "D1 number equals D3 formatted to two decimal places in scientific notation; all full values and source strings retained below.",
+    "unexplained_differences": [],
+    "any_FDR_difference": false,
+    "any_beta_sign_change": false,
+    "differences": [
+      [
+        "AEBP1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "ARSJ",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "ATAD1",
+        "Cytokine survival beta",
+        -6.4818e-05,
+        "-6.48E-05"
+      ],
+      [
+        "ATG4A",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "BEX2",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "C14orf166B",
+        "Cytokine survival beta",
+        -8.9545e-05,
+        "-8.95E-05"
+      ],
+      [
+        "C19orf43",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "CAMK2D",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "CCL4",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "CDC23",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "CIAPIN1",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "CREB3",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "CRTC1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "CXADR",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "CYTH1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "DES",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "DTNBP1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "EDA",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "FAM168A",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "FAM25A",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "FEZF1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "FOXQ1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "GPR149",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "GPR171",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "GPR88",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "GSPT1",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "GSS",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "HHEX",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "HRASLS",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "hsa-mir-1225",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "hsa-mir-1254-2",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "hsa-mir-3162",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "hsa-mir-3202-1",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "hsa-mir-3916",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "hsa-mir-3937",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "hsa-mir-4503",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "hsa-mir-5092",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "hsa-mir-548ak",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "hsa-mir-548as",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "hsa-mir-619",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "hsa-mir-6501",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "hsa-mir-6881",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "HSPB11",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "IGFBP4",
+        "Cytokine survival beta",
+        -5.5328e-06,
+        "-5.53E-06"
+      ],
+      [
+        "IGFBP4",
+        "Cytokine survival z",
+        -3.2533e-05,
+        "-3.25E-05"
+      ],
+      [
+        "KCNRG",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "KLF9",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "KPTN",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "LPCAT2",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "LZTR1",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "MFN1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "MOSPD2",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "MYBL1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "NFATC2",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "NIPAL4",
+        "Cytokine survival beta",
+        -5.2288e-05,
+        "-5.23E-05"
+      ],
+      [
+        "NLGN3",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "NUTM1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "OPRD1",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "OSBPL8",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "PDK2",
+        "Cytokine survival beta",
+        -4.111e-05,
+        "-4.11E-05"
+      ],
+      [
+        "PHF2",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "PKIG",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "PLCZ1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "PLEKHA5",
+        "Cytokine survival beta",
+        4.2245e-05,
+        "4.22E-05"
+      ],
+      [
+        "PSIP1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "PSMB7",
+        "Cytokine survival beta",
+        1.6855e-05,
+        "1.69E-05"
+      ],
+      [
+        "PSMB7",
+        "Cytokine survival z",
+        8.0644e-05,
+        "8.06E-05"
+      ],
+      [
+        "PVALB",
+        "Cytokine survival beta",
+        -4.7523e-06,
+        "-4.75E-06"
+      ],
+      [
+        "PVALB",
+        "Cytokine survival z",
+        -1.6746e-05,
+        "-1.67E-05"
+      ],
+      [
+        "RAB38",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "RAD50",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "RPL10",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "RSPH10B",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "SBF1",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "SCN9A",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "SGSM1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "SH3BGRL2",
+        "Cytokine survival beta",
+        7.0767e-05,
+        "7.08E-05"
+      ],
+      [
+        "SLC8A3",
+        "Cytokine survival beta",
+        8.6071e-05,
+        "8.61E-05"
+      ],
+      [
+        "SRGAP2",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "TBCE",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "TRPC1",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "UBXN8",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "VPS13C",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "WNT1",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "WRNIP1",
+        "Cytokine survival p-value",
+        9.2132e-05,
+        "9.21E-05"
+      ],
+      [
+        "YKT6",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ],
+      [
+        "ZNF30",
+        "Cytokine survival p-value",
+        4.6066e-05,
+        "4.61E-05"
+      ]
+    ]
+  },
+  "notebook_filter_and_table": [
+    {
+      "source": [
+        "# full set of genes being considered after some filtering \n",
+        "# (miRNA genes, any gene with less than 3 guides)\n",
+        "res2 = read.table('cytokie_screen_mle.gene_summary.txt', header=T, stringsAsFactors = F)\n",
+        "res2 = subset(res2, sgRNA >2)\n",
+        "res2 = subset(res2,  !grepl('hsa-', res2$Gene))\n",
+        "res2 = res2[order(res2$cytokine_survival.p.value),]\n",
+        "res2$cytokine_survival.p.value[res2$cytokine_survival.p.value==0]<- 1e-5\n",
+        "#write.csv(res2[,1:6], \"all_screen.csv\" , row.names=F)"
+      ],
+      "outputs": []
+    },
+    {
+      "source": [
+        "table(res$cytokine_survival.fdr<0.1,  res$cytokine_survival.beta>0 )"
+      ],
+      "outputs": [
+        {
+          "data": {
+            "text/plain": [
+              "       \n",
+              "        FALSE TRUE\n",
+              "  FALSE  9043 8804\n",
+              "  TRUE    440  427"
+            ]
+          },
+          "metadata": {},
+          "output_type": "display_data"
+        }
+      ]
+    }
+  ],
+  "denominator_discrepancy": {
+    "article": 18703,
+    "pinned_data": 18714,
+    "notebook_displayed_counts_sum": 18714,
+    "action": "Retain explicit 18,714 eligible rows; do not delete 11 unspecified genes."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "review_date": "2026-10-23",
+  "headers": ["Feature", "Cytokine survival screen", "Insulin content screen"],
+  "rows": [
+    ["Model", "EndoC-betaH1", "EndoC-betaH1"],
+    ["Library", "GeCKO-V2", "TKOv3; four guides per gene"],
+    ["Selection and timing", "48 h after infection: 3 d selection, then 14 d culture and 72 h cytokines", "7 d puromycin incubation, then staining and sorting"],
+    ["Condition", "IL-1beta 0.5 ng/ml, TNF-alpha 1 ng/ml, IFN-gamma 10 ng/ml versus BSA", "Standard culture; intracellular insulin staining without cytokine challenge"],
+    ["Endpoint", "Relative guide representation after cytokines versus control", "Guide representation in low- versus high-insulin fractions"],
+    ["Genome-wide replication", "One pooled contrast described; n=3 is a separate cell-count time-course", "Two independent transductions, sorts and sequencing runs"],
+    ["Positive effect", "Knockout relatively enriched after cytokines", "Knockout enriched in low-insulin fraction"]
+  ],
+  "sources": [
+    {"column": "Cytokine survival screen", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9903835/", "doi": "10.1016/j.xgen.2022.100214", "locator": "STAR Methods: genome-wide CRISPR screen"},
+    {"column": "Insulin content screen", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9839450/", "doi": "10.1038/s41588-022-01261-2", "locator": "Methods: genome-wide CRISPR screen and FACS"}
+  ],
+  "caption": "Common cell-line identity does not equate the perturbation, timing, condition or endpoint. The survival-screen n=3 time-course and later functional experiments are not genome-wide screen replicates. Relative representation can reflect growth or selection as well as death; content is not glucose-responsive secretion."
+}

@@ -1,0 +1,379 @@
+{
+  "created": "2022-09-23T06:57:07.957136+00:00",
+  "modified": "2022-10-28T00:02:00.249466+00:00",
+  "id": 7106728,
+  "conceptrecid": "7084136",
+  "doi": "10.5281/zenodo.7106728",
+  "conceptdoi": "10.5281/zenodo.7084136",
+  "doi_url": "https://doi.org/10.5281/zenodo.7106728",
+  "metadata": {
+    "title": "Supporting data for: Type 1 diabetes risk genes mediate pancreatic beta cell survival in response to proinflammatory cytokines",
+    "doi": "10.5281/zenodo.7106728",
+    "publication_date": "2022-09-16",
+    "description": "<p><strong>SUMMARY OF THE STUDY</strong></p>\n\n<p>We combined functional genomics and human genetics to investigate processes that affect type 1 diabetes (T1D) risk by mediating beta-cell survival in response to proinflammatory cytokines. We mapped 38,931 cytokine-responsive candidate <em>cis-</em>regulatory elements (cCREs) in beta-cells using ATAC-seq and snATAC-seq and linked them to target genes using co-accessibility and HiChIP. Using a genome-wide CRISPR screen in EndoC-&beta;H1 cells we identified 867 genes affecting cytokine-induced survival, and genes promoting survival and up-regulated in cytokines were enriched at T1D risk loci. Using SNP-SELEX, we identified 2,229 variants in cytokine-responsive cCREs altering transcription factor (TF) binding, and variants altering binding of TFs regulating stress, inflammation and apoptosis were enriched for T1D risk.&nbsp; At the 16p13 locus, a fine-mapped T1D variant altering TF binding in a cytokine-induced cCRE interacted with <em>SOCS1</em>, which promoted survival in cytokine exposure. Our findings reveal processes and genes acting in beta-cells during inflammation that modulate T1D risk.</p>\n\n<p><strong>DESCRIPTION OF FILES:</strong></p>\n\n<ul>\n\t<li>Supplementary Data 1. List of islet cCREs annotated with cell type and cytokine response &nbsp;- also in GSE205853</li>\n\t<li>Supplementary Data 2. Coaccessible sites in untreated beta cells and promoter annotations - also in GSE205853</li>\n\t<li>Supplementary Data 3. Coaccessible sites in cytokine-treated beta cells and promoter annotations - also in GSE205853</li>\n\t<li>Supplementary Data 4. Coaccessible sites in cytokine treated and untreated beta cells and promoter annotations - also in GSE205853</li>\n\t<li>Supplementary Data 5. Chromatin interactions in EndoC-BH1 cells - also in GSE205853</li>\n\t<li>Supplementary Data 6. Variants selected for SNP-SELEX assay&nbsp;</li>\n\t<li>Supplementary Data 7. Variants with TF binding and allelic binding results from SNP-SELEX</li>\n\t<li>Supplementary Data 8. snATAC-seq barcodes and metadata - also in GSE205853</li>\n\t<li>Supplementary Data 9. CRISPR-KO screen results - also in GSE205853</li>\n\t<li>Supplementary Data 10. Bulk ATAC-seq count matrix - also in GSE205853</li>\n\t<li>Supplementary Data 11. Bulk RNA-seq count matrix - also in GSE205853</li>\n\t<li>Supplementary Data 12. Alpha cells snATAC-seq count matrix - also in GSE205853</li>\n\t<li>Supplementary Data 13. Acinar cells snATAC-seq count matrix - also in GSE205853</li>\n\t<li>Supplementary Data 14. Beta cells snATAC-seq count matrix - also in GSE205853</li>\n\t<li>Supplementary Data 15. Stellate cells snATAC-seq count matrix - also in GSE205853</li>\n\t<li>Supplementary Data 16. Endothelial cells snATAC-seq count matrix - also in GSE205853</li>\n\t<li>Supplementary Data 17. Delta cells snATAC-seq count matrix - also in GSE205853</li>\n\t<li>Supplementary Data 18. Luciferase assay rs10483809</li>\n\t<li>Supplementary Data 19. SOCS1 knockdown qPCR results</li>\n\t<li>Supplementary Data 20. SOCS1 knockdown Apotracker (flow-cytometry)results</li>\n</ul>\n\n<p><strong>Raw data deposited at GEO, accessions&nbsp;GSE205853 and&nbsp;GSE118725.</strong></p>\n\n<p><em>Please refer to publication and GEO for details on methods.</em></p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Paola Benaglio",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Han Zhu",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Mei-Lin Okino",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Jian Yan",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Ruth Elgamal",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Naoki Nariai",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Elisha Beebe",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Katha Korgaonkar",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Yunjiang Qiu",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Margaret Donovan",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Joshua Chiou",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Gaowei Wang",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Jacklyn Newsome",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Jaspreet Kaur",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Sierra Corban",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Anthony Aylward",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Jussi Taipale",
+        "affiliation": "Karolinska Institutet"
+      },
+      {
+        "name": "Bing Ren",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Kelly A Frazer",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Maike Sander",
+        "affiliation": "UC San Diego"
+      },
+      {
+        "name": "Kyle J Gaulton",
+        "affiliation": "UC San Diego"
+      }
+    ],
+    "keywords": [
+      "Type 1 diabetes",
+      "Cytokine",
+      "Pancreatic islets",
+      "Beta cells"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://www.biorxiv.org/content/10.1101/2021.10.29.466025v1",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-preprint",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.5281/zenodo.7183895",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-softwaredocumentation",
+        "scheme": "doi"
+      }
+    ],
+    "version": "2",
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7084136"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Supporting data for: Type 1 diabetes risk genes mediate pancreatic beta cell survival in response to proinflammatory cytokines",
+  "links": {
+    "self": "https://zenodo.org/api/records/7106728",
+    "self_html": "https://zenodo.org/records/7106728",
+    "preview_html": "https://zenodo.org/records/7106728?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7106728",
+    "self_doi": "https://doi.org/10.5281/zenodo.7106728",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7106728",
+    "reserve_doi": "https://zenodo.org/api/records/7106728/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7084136",
+    "parent_html": "https://zenodo.org/records/7084136",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7084136",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7084136",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7106728/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7106728/sequence/default",
+    "files": "https://zenodo.org/api/records/7106728/files",
+    "media_files": "https://zenodo.org/api/records/7106728/media-files",
+    "latest": "https://zenodo.org/api/records/7106728/versions/latest",
+    "latest_html": "https://zenodo.org/records/7106728/latest",
+    "versions": "https://zenodo.org/api/records/7106728/versions",
+    "draft": "https://zenodo.org/api/records/7106728/draft",
+    "access_links": "https://zenodo.org/api/records/7106728/access/links",
+    "access_grants": "https://zenodo.org/api/records/7106728/access/grants",
+    "access_users": "https://zenodo.org/api/records/7106728/access/users",
+    "access_request": "https://zenodo.org/api/records/7106728/access/request",
+    "access": "https://zenodo.org/api/records/7106728/access",
+    "communities": "https://zenodo.org/api/records/7106728/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7106728/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7106728/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7106728/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/7106728/quota-increase",
+    "requests": "https://zenodo.org/api/records/7106728/requests"
+  },
+  "updated": "2022-10-28T00:02:00.249466+00:00",
+  "recid": "7106728",
+  "revision": 4,
+  "files": [
+    {
+      "id": "6c9e1b8b-771d-4601-8be9-b21ee1a9fd47",
+      "key": "Supplementary_Data_03_Coaccessible_sites_cytokine-treated_beta_cells.tsv",
+      "size": 29827438,
+      "checksum": "md5:3e7b38a03972a129e8466d03983a87f7",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_03_Coaccessible_sites_cytokine-treated_beta_cells.tsv/content"
+      }
+    },
+    {
+      "id": "ea80ea84-3838-4035-ba6a-974c684ea00f",
+      "key": "Supplementary_Data_13.acinar.snATAC_count.matrix.txt",
+      "size": 5999237,
+      "checksum": "md5:c73eb4663e0e58f3e10408d58fb361a2",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_13.acinar.snATAC_count.matrix.txt/content"
+      }
+    },
+    {
+      "id": "862589b3-709a-4931-ae9b-ac53f9d5b7c1",
+      "key": "Supplementary_Data_14.beta.snATAC_count.matrix.txt",
+      "size": 6523065,
+      "checksum": "md5:ab352271b79ebac38a96c309c95a83d1",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_14.beta.snATAC_count.matrix.txt/content"
+      }
+    },
+    {
+      "id": "51990d5c-da26-4427-98b5-94e23d485e50",
+      "key": "Supplementary_Data_01_Islet_cytokine_responsive_cCREs.xlsx",
+      "size": 5329345,
+      "checksum": "md5:dda1c3a427c1eff46f36e06a354cd662",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_01_Islet_cytokine_responsive_cCREs.xlsx/content"
+      }
+    },
+    {
+      "id": "f54b77a5-d3b1-44b1-8751-cbfe278deda6",
+      "key": "Supplementary_Data_02_Coaccessible_sites_untreated_beta_cells.tsv",
+      "size": 20855259,
+      "checksum": "md5:4ad4643b56fb08289e6a1cb87dfb5cec",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_02_Coaccessible_sites_untreated_beta_cells.tsv/content"
+      }
+    },
+    {
+      "id": "4018aa48-7855-480c-9dce-9498d3a66f2e",
+      "key": "Supplementary_Data_04_Coaccessible_sites_cytokine-treated_AND_untreated_beta_cells.tsv",
+      "size": 32801711,
+      "checksum": "md5:c1c6b332e39a0e08693e1adf48b6c90f",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_04_Coaccessible_sites_cytokine-treated_AND_untreated_beta_cells.tsv/content"
+      }
+    },
+    {
+      "id": "5114390f-b2f4-4691-bf61-2afd576795ea",
+      "key": "Supplementary_Data_05_HiChIP_interactions_EndoC-BH1_cells.xlsx .xlsx",
+      "size": 2638904,
+      "checksum": "md5:832cdc1a59c2b09e747e219ebc07bdfb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_05_HiChIP_interactions_EndoC-BH1_cells.xlsx%20.xlsx/content"
+      }
+    },
+    {
+      "id": "f1d9dd72-df17-44ff-b904-fb57f8524070",
+      "key": "Supplementary_Data_06_SNP-SELEX_variants.xlsx",
+      "size": 8902269,
+      "checksum": "md5:d82f54f9270da4b9795ba11d28e1027d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_06_SNP-SELEX_variants.xlsx/content"
+      }
+    },
+    {
+      "id": "e82d3280-ad5b-4138-9d68-c0ec74f04b10",
+      "key": "Supplementary_Data_07_SNP-SELEX_results.txt",
+      "size": 191550134,
+      "checksum": "md5:2d458dcd6ab127bd055ec03f38d67a3c",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_07_SNP-SELEX_results.txt/content"
+      }
+    },
+    {
+      "id": "56838287-7a1f-4ba3-ab79-eb4958921849",
+      "key": "Supplementary_Data_08.snATAC_barcodes_and_metadata.csv",
+      "size": 2024508,
+      "checksum": "md5:ee460f3879527b6def3413cef1190bbb",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_08.snATAC_barcodes_and_metadata.csv/content"
+      }
+    },
+    {
+      "id": "18f5210e-6100-4e0f-b8a4-cc917b2d25f1",
+      "key": "Supplementary_Data_09.CRISPR-KO-screen_results.csv",
+      "size": 895768,
+      "checksum": "md5:83f4844faf616c122ddeb117a6fb5fa8",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_09.CRISPR-KO-screen_results.csv/content"
+      }
+    },
+    {
+      "id": "7dd22de9-97da-47a4-abce-9f3329139c5e",
+      "key": "Supplementary_Data_10.Bulk_ATACSeq_count.matrix.txt",
+      "size": 23550143,
+      "checksum": "md5:52e5b1bc25a77a749744c5cc19beff71",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_10.Bulk_ATACSeq_count.matrix.txt/content"
+      }
+    },
+    {
+      "id": "3ddf3e46-5400-4cc2-a83b-13be530c4ad1",
+      "key": "Supplementary_Data_11.Bulk_RNASeq_count.matrix.txt",
+      "size": 3645213,
+      "checksum": "md5:40c25ece6454aac3eb8ab80d6e8521b6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_11.Bulk_RNASeq_count.matrix.txt/content"
+      }
+    },
+    {
+      "id": "d40c8d19-9ef4-490c-bf45-c9cfc14d21c8",
+      "key": "Supplementary_Data_12.alpha.snATAC_count.matrix.txt",
+      "size": 6383680,
+      "checksum": "md5:37626aac1e904ced57996fa4c1215ae6",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_12.alpha.snATAC_count.matrix.txt/content"
+      }
+    },
+    {
+      "id": "e735ea4f-9dcc-4914-a0c9-3379e53c9efb",
+      "key": "Supplementary_Data_17.delta.snATAC_count.matrix.txt",
+      "size": 6074897,
+      "checksum": "md5:651f2a18967a217582c2f50169bc6740",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_17.delta.snATAC_count.matrix.txt/content"
+      }
+    },
+    {
+      "id": "7e0a2270-0a3b-46c6-8254-8c449be8b94f",
+      "key": "Supplementary_Data_18.LuciferaseMIN6.json",
+      "size": 1080,
+      "checksum": "md5:9611ac8f1239debd21a042597a361063",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_18.LuciferaseMIN6.json/content"
+      }
+    },
+    {
+      "id": "42fcf47b-37e0-431d-b1f9-cae18252f92c",
+      "key": "Supplementary_Data_19.endoC_SOCS1_qpcr.xlsx",
+      "size": 19704,
+      "checksum": "md5:4fcec0987baf6266c730db2710e56702",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_19.endoC_SOCS1_qpcr.xlsx/content"
+      }
+    },
+    {
+      "id": "8e76f0b4-b59e-47f3-b3c0-110665c00478",
+      "key": "Supplementary_Data_20.SOCS1_Apotracker.txt",
+      "size": 184,
+      "checksum": "md5:0a20763067928d148ea9be6f5dc78f3a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_20.SOCS1_Apotracker.txt/content"
+      }
+    },
+    {
+      "id": "e0ae603d-523a-4d72-93fc-99b74cfebca1",
+      "key": "Supplementary_Data_16.endothelial.snATAC_count.matrix.txt",
+      "size": 5973501,
+      "checksum": "md5:a2218c5616e68c09b8c4f322618d757a",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_16.endothelial.snATAC_count.matrix.txt/content"
+      }
+    },
+    {
+      "id": "72511977-9ed6-4cf1-a78b-9576bf594914",
+      "key": "Supplementary_Data_15.stellate.snATAC_count.matrix.txt",
+      "size": 6051248,
+      "checksum": "md5:dab35a92344dd9d382955443d1a17d96",
+      "links": {
+        "self": "https://zenodo.org/api/records/7106728/files/Supplementary_Data_15.stellate.snATAC_count.matrix.txt/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "407126"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 2762,
+    "unique_downloads": 2706,
+    "views": 620,
+    "unique_views": 574,
+    "version_downloads": 2326,
+    "version_unique_downloads": 2277,
+    "version_unique_views": 487,
+    "version_views": 527
+  },
+  "state": "done",
+  "submitted": true
+}

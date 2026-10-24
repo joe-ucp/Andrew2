@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research report and the original source studies and datasets."
+title: "Cross-screen analysis of insulin-content effects among cytokine-survival-favoring beta-cell knockouts"
+authors:
+  - name: "UCP Technology LLC"
+type: software
+version: "2.0.0"
+url: "https://github.com/joe-ucp/andrew2"
+date-released: "2026-10-24"
+abstract: "Post-review catalog comparison with source-semantic audit, separate evidence and eligibility axes, selected-guide recovery and reproducible inference. Enrichment remains unresolved."
+license: MIT
+keywords:
+  - beta-cell
+  - CRISPR
+  - insulin content
+  - cytokine survival

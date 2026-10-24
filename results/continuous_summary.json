@@ -1,0 +1,477 @@
+{
+  "status": "post_result_exploratory",
+  "caution": "Post-result exploratory diagnostic. The frozen binary labels are retained for arithmetic only; guide-FDR audit semantics remain unvalidated. These calculations do not establish biological replication or a survival-function tradeoff.",
+  "outcome": "Per-gene median source insulin LFC, separately for source labels r0 and r1. All finite values are used; no L label or guide FDR cutoff is used in the contrast.",
+  "estimand": "Delta_r = sum_s w_s [mean(Y_r | A=1,s) - mean(Y_r | A=0,s)], with fixed w_s=m_s/sum_s m_s. This standardizes A0 to the observed exposed-gene stratum composition and is descriptive, not causal.",
+  "target": "The 285 frozen survival-positive genes represented by the primary exposure labels, compared with A0 genes in the same frozen strata. The finite-catalog contrast is computed exactly; its resampling interval invokes a hypothetical exchangeable-gene reference.",
+  "sign": "Positive delta means larger low-versus-high insulin LFC among A1 genes after this standardization; in the source orientation this corresponds to lower intracellular insulin content. It does not measure secretion or show a biological tradeoff.",
+  "sd_scaling": "D_r = Delta_r / sqrt(sum_s w_s sample_variance(Y_r | A=0,s)). This descriptive scaling uses within-stratum A0 spread; it is not a meta-analytic or bias-corrected standardized mean difference.",
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20261023,
+    "rng": "NumPy default_rng (PCG64)",
+    "method": "Resample gene rows with replacement separately within each A-by-stratum cell, retaining each selected gene's r0/r1 vector together, and retaining each cell size. Fixed original weights. Recalculate control variance for SD-scaled contrasts in every draw. Report linear-interpolated 2.5th/97.5th percentiles.",
+    "limitations": "Intervals represent an exchangeable-gene resampling reference, not donor or biological-replicate variability, guide measurement error, or source-selection/FDR uncertainty. Pathway/gene dependence is not modeled. A singleton cell has zero empirical resampling variability; sparse exposed cells make these intervals fragile. No hypothesis-test p-values or significance claims are made."
+  },
+  "unweighted_strata": [
+    {
+      "stratum": "1|3-5|3",
+      "n_A1": 0,
+      "n_A0": 4,
+      "target_weight": 0.0
+    },
+    {
+      "stratum": "2|3-5|3",
+      "n_A1": 0,
+      "n_A0": 3,
+      "target_weight": 0.0
+    },
+    {
+      "stratum": "3|3-5|3",
+      "n_A1": 0,
+      "n_A0": 2,
+      "target_weight": 0.0
+    },
+    {
+      "stratum": "3|3-5|4+",
+      "n_A1": 0,
+      "n_A0": 19,
+      "target_weight": 0.0
+    },
+    {
+      "stratum": "4|3-5|3",
+      "n_A1": 0,
+      "n_A0": 2,
+      "target_weight": 0.0
+    },
+    {
+      "stratum": "4|3-5|4+",
+      "n_A1": 0,
+      "n_A0": 27,
+      "target_weight": 0.0
+    },
+    {
+      "stratum": "5|3-5|3",
+      "n_A1": 0,
+      "n_A0": 1,
+      "target_weight": 0.0
+    },
+    {
+      "stratum": "5|3-5|4+",
+      "n_A1": 0,
+      "n_A0": 16,
+      "target_weight": 0.0
+    }
+  ],
+  "sparse_exposed_cells_n_le_6": [
+    {
+      "stratum": "1|3-5|4+",
+      "n_A1": 1,
+      "n_A0": 21,
+      "target_weight": 0.0035087719298245615
+    },
+    {
+      "stratum": "1|6+|3",
+      "n_A1": 6,
+      "n_A0": 137,
+      "target_weight": 0.021052631578947368
+    },
+    {
+      "stratum": "2|3-5|4+",
+      "n_A1": 3,
+      "n_A0": 28,
+      "target_weight": 0.010526315789473684
+    },
+    {
+      "stratum": "2|6+|3",
+      "n_A1": 3,
+      "n_A0": 139,
+      "target_weight": 0.010526315789473684
+    },
+    {
+      "stratum": "3|6+|3",
+      "n_A1": 3,
+      "n_A0": 137,
+      "target_weight": 0.010526315789473684
+    },
+    {
+      "stratum": "4|6+|3",
+      "n_A1": 2,
+      "n_A0": 140,
+      "target_weight": 0.007017543859649123
+    },
+    {
+      "stratum": "5|6+|3",
+      "n_A1": 2,
+      "n_A0": 130,
+      "target_weight": 0.007017543859649123
+    }
+  ],
+  "summary": [
+    {
+      "replicate_label": "r0",
+      "n_genes_total": 12184,
+      "n_exposed_target": 285,
+      "n_comparator_genes_in_weighted_strata": 11825,
+      "n_weighted_strata": 12,
+      "weighted_mean_lfc_A1": -0.07321154877192984,
+      "exposure_standardized_mean_lfc_A0": -0.03395069012543684,
+      "exposure_standardized_mean_difference": -0.039260858646493,
+      "gene_bootstrap_percentile_025": -0.10727612179262905,
+      "gene_bootstrap_percentile_975": 0.0310402577708111,
+      "weighted_within_A0_sd": 0.6525002983477758,
+      "sd_scaled_mean_difference": -0.060169870796851925,
+      "sd_scaled_gene_bootstrap_percentile_025": -0.16483774455305433,
+      "sd_scaled_gene_bootstrap_percentile_975": 0.047632211684269884,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 20261023
+    },
+    {
+      "replicate_label": "r1",
+      "n_genes_total": 12184,
+      "n_exposed_target": 285,
+      "n_comparator_genes_in_weighted_strata": 11825,
+      "n_weighted_strata": 12,
+      "weighted_mean_lfc_A1": -0.12233671421052632,
+      "exposure_standardized_mean_lfc_A0": -0.1564567313417981,
+      "exposure_standardized_mean_difference": 0.03412001713127179,
+      "gene_bootstrap_percentile_025": -0.10382659260001723,
+      "gene_bootstrap_percentile_975": 0.16320339589353305,
+      "weighted_within_A0_sd": 1.1023229349192982,
+      "sd_scaled_mean_difference": 0.030952832468980368,
+      "sd_scaled_gene_bootstrap_percentile_025": -0.09451230202501372,
+      "sd_scaled_gene_bootstrap_percentile_975": 0.14767794020379055,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 20261023
+    }
+  ],
+  "stratum_details": [
+    {
+      "stratum": "1|3-5|4+",
+      "replicate_label": "r0",
+      "n_A1": 1,
+      "n_A0": 21,
+      "target_weight": 0.0035087719298245615,
+      "mean_lfc_A1": -0.052995,
+      "mean_lfc_A0": -0.031682761904761915,
+      "mean_difference": -0.021312238095238085,
+      "weighted_contribution": -7.477978279030908e-05,
+      "sample_sd_A0": 0.6355595046814385,
+      "singleton_exposure_no_bootstrap_variation": true
+    },
+    {
+      "stratum": "1|3-5|4+",
+      "replicate_label": "r1",
+      "n_A1": 1,
+      "n_A0": 21,
+      "target_weight": 0.0035087719298245615,
+      "mean_lfc_A1": -0.220695,
+      "mean_lfc_A0": -0.10088921428571432,
+      "mean_difference": -0.11980578571428568,
+      "weighted_contribution": -0.0004203711779448621,
+      "sample_sd_A0": 0.8168440991653574,
+      "singleton_exposure_no_bootstrap_variation": true
+    },
+    {
+      "stratum": "1|6+|3",
+      "replicate_label": "r0",
+      "n_A1": 6,
+      "n_A0": 137,
+      "target_weight": 0.021052631578947368,
+      "mean_lfc_A1": -0.456883,
+      "mean_lfc_A0": 0.10373650364963502,
+      "mean_difference": -0.560619503649635,
+      "weighted_contribution": -0.011802515866308105,
+      "sample_sd_A0": 0.8312019658716052,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "1|6+|3",
+      "replicate_label": "r1",
+      "n_A1": 6,
+      "n_A0": 137,
+      "target_weight": 0.021052631578947368,
+      "mean_lfc_A1": -0.2895991666666667,
+      "mean_lfc_A0": -0.39515559233576625,
+      "mean_difference": 0.10555642566909956,
+      "weighted_contribution": 0.002222240540402096,
+      "sample_sd_A0": 1.025435938939316,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "1|6+|4+",
+      "replicate_label": "r0",
+      "n_A1": 44,
+      "n_A0": 2224,
+      "target_weight": 0.1543859649122807,
+      "mean_lfc_A1": -0.21553214545454544,
+      "mean_lfc_A0": -0.03500855907419067,
+      "mean_difference": -0.18052358638035476,
+      "weighted_contribution": -0.027870308072756526,
+      "sample_sd_A0": 0.6044028194085943,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "1|6+|4+",
+      "replicate_label": "r1",
+      "n_A1": 44,
+      "n_A0": 2224,
+      "target_weight": 0.1543859649122807,
+      "mean_lfc_A1": -0.12023011363636363,
+      "mean_lfc_A0": -0.17570972163669046,
+      "mean_difference": 0.055479608000326835,
+      "weighted_contribution": 0.008565272814085548,
+      "sample_sd_A0": 1.089925697421022,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "2|3-5|4+",
+      "replicate_label": "r0",
+      "n_A1": 3,
+      "n_A0": 28,
+      "target_weight": 0.010526315789473684,
+      "mean_lfc_A1": -0.04004548333333333,
+      "mean_lfc_A0": -0.06700846607142859,
+      "mean_difference": 0.026962982738095255,
+      "weighted_contribution": 0.0002838208709273185,
+      "sample_sd_A0": 0.4304399095885029,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "2|3-5|4+",
+      "replicate_label": "r1",
+      "n_A1": 3,
+      "n_A0": 28,
+      "target_weight": 0.010526315789473684,
+      "mean_lfc_A1": 0.3788683333333333,
+      "mean_lfc_A0": 0.06997242857142856,
+      "mean_difference": 0.30889590476190476,
+      "weighted_contribution": 0.0032515358395989974,
+      "sample_sd_A0": 1.1057505504303295,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "2|6+|3",
+      "replicate_label": "r0",
+      "n_A1": 3,
+      "n_A0": 139,
+      "target_weight": 0.010526315789473684,
+      "mean_lfc_A1": -0.22983333333333333,
+      "mean_lfc_A0": -0.004066161870503599,
+      "mean_difference": -0.22576717146282974,
+      "weighted_contribution": -0.002376496541713997,
+      "sample_sd_A0": 0.6803884405520912,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "2|6+|3",
+      "replicate_label": "r1",
+      "n_A1": 3,
+      "n_A0": 139,
+      "target_weight": 0.010526315789473684,
+      "mean_lfc_A1": 0.8247062999999999,
+      "mean_lfc_A0": -0.4170218697841727,
+      "mean_difference": 1.2417281697841727,
+      "weighted_contribution": 0.013070822839833397,
+      "sample_sd_A0": 1.1439935413208404,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "2|6+|4+",
+      "replicate_label": "r0",
+      "n_A1": 44,
+      "n_A0": 2217,
+      "target_weight": 0.1543859649122807,
+      "mean_lfc_A1": 0.1161127045454545,
+      "mean_lfc_A0": -0.03280353390392427,
+      "mean_difference": 0.14891623844937876,
+      "weighted_contribution": 0.022990577164114616,
+      "sample_sd_A0": 0.6519911171569793,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "2|6+|4+",
+      "replicate_label": "r1",
+      "n_A1": 44,
+      "n_A0": 2217,
+      "target_weight": 0.1543859649122807,
+      "mean_lfc_A1": 0.0709314125,
+      "mean_lfc_A0": -0.12404193711614817,
+      "mean_difference": 0.19497334961614815,
+      "weighted_contribution": 0.030101148712668488,
+      "sample_sd_A0": 1.10154619232771,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "3|6+|3",
+      "replicate_label": "r0",
+      "n_A1": 3,
+      "n_A0": 137,
+      "target_weight": 0.010526315789473684,
+      "mean_lfc_A1": -0.2892766666666667,
+      "mean_lfc_A0": 0.1340547350364963,
+      "mean_difference": -0.42333140170316297,
+      "weighted_contribution": -0.0044561200179280315,
+      "sample_sd_A0": 0.8216538108092741,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "3|6+|3",
+      "replicate_label": "r1",
+      "n_A1": 3,
+      "n_A0": 137,
+      "target_weight": 0.010526315789473684,
+      "mean_lfc_A1": -0.03611600000000001,
+      "mean_lfc_A0": -0.3264848828467153,
+      "mean_difference": 0.29036888284671525,
+      "weighted_contribution": 0.003056514556281213,
+      "sample_sd_A0": 1.0625879635505526,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "3|6+|4+",
+      "replicate_label": "r0",
+      "n_A1": 59,
+      "n_A0": 2216,
+      "target_weight": 0.20701754385964913,
+      "mean_lfc_A1": 0.008908025423728823,
+      "mean_lfc_A0": -0.05992171377256291,
+      "mean_difference": 0.06882973919629173,
+      "weighted_contribution": 0.014248963552916535,
+      "sample_sd_A0": 0.6272595480339891,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "3|6+|4+",
+      "replicate_label": "r1",
+      "n_A1": 59,
+      "n_A0": 2216,
+      "target_weight": 0.20701754385964913,
+      "mean_lfc_A1": -0.2939688279661017,
+      "mean_lfc_A0": -0.13398377923962068,
+      "mean_difference": -0.159985048726481,
+      "weighted_contribution": -0.033119711841622386,
+      "sample_sd_A0": 1.0988816042471572,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "4|6+|3",
+      "replicate_label": "r0",
+      "n_A1": 2,
+      "n_A0": 140,
+      "target_weight": 0.007017543859649123,
+      "mean_lfc_A1": -0.8167875,
+      "mean_lfc_A0": 0.23262199321428584,
+      "mean_difference": -1.049409493214286,
+      "weighted_contribution": -0.00736427714536341,
+      "sample_sd_A0": 0.9533820211215671,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "4|6+|3",
+      "replicate_label": "r1",
+      "n_A1": 2,
+      "n_A0": 140,
+      "target_weight": 0.007017543859649123,
+      "mean_lfc_A1": -0.528097,
+      "mean_lfc_A0": -0.4257076142857139,
+      "mean_difference": -0.10238938571428613,
+      "weighted_contribution": -0.0007185220050125343,
+      "sample_sd_A0": 1.075766688487939,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "4|6+|4+",
+      "replicate_label": "r0",
+      "n_A1": 49,
+      "n_A0": 2217,
+      "target_weight": 0.17192982456140352,
+      "mean_lfc_A1": -0.013333527551020404,
+      "mean_lfc_A0": -0.015497991630130794,
+      "mean_difference": 0.0021644640791103897,
+      "weighted_contribution": 0.0003721359293909091,
+      "sample_sd_A0": 0.658602697834522,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "4|6+|4+",
+      "replicate_label": "r1",
+      "n_A1": 49,
+      "n_A0": 2217,
+      "target_weight": 0.17192982456140352,
+      "mean_lfc_A1": -0.038170488775510235,
+      "mean_lfc_A0": -0.12225030851420829,
+      "mean_difference": 0.08407981973869805,
+      "weighted_contribution": 0.014455828656828788,
+      "sample_sd_A0": 1.0893137375564537,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "5|6+|3",
+      "replicate_label": "r0",
+      "n_A1": 2,
+      "n_A0": 130,
+      "target_weight": 0.007017543859649123,
+      "mean_lfc_A1": -0.3995675,
+      "mean_lfc_A0": 0.1321698576923077,
+      "mean_difference": -0.5317373576923077,
+      "weighted_contribution": -0.003731490229419703,
+      "sample_sd_A0": 0.7110415988460257,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "5|6+|3",
+      "replicate_label": "r1",
+      "n_A1": 2,
+      "n_A0": 130,
+      "target_weight": 0.007017543859649123,
+      "mean_lfc_A1": -0.38817450000000003,
+      "mean_lfc_A0": -0.4818992636153846,
+      "mean_difference": 0.09372476361538457,
+      "weighted_contribution": 0.0006577176394062075,
+      "sample_sd_A0": 1.1145153678835156,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "5|6+|4+",
+      "replicate_label": "r0",
+      "n_A1": 69,
+      "n_A0": 2219,
+      "target_weight": 0.24210526315789474,
+      "mean_lfc_A1": -0.13708111884057975,
+      "mean_lfc_A0": -0.056618727178909395,
+      "mean_difference": -0.08046239166167035,
+      "weighted_contribution": -0.019480368507562296,
+      "sample_sd_A0": 0.6675392972416824,
+      "singleton_exposure_no_bootstrap_variation": false
+    },
+    {
+      "stratum": "5|6+|4+",
+      "replicate_label": "r1",
+      "n_A1": 69,
+      "n_A0": 2219,
+      "target_weight": 0.24210526315789474,
+      "mean_lfc_A1": -0.19121520000000003,
+      "mean_lfc_A0": -0.1622919979517803,
+      "mean_difference": -0.028923202048219743,
+      "weighted_contribution": -0.007002459443253201,
+      "sample_sd_A0": 1.132547246326179,
+      "singleton_exposure_no_bootstrap_variation": false
+    }
+  ],
+  "provenance": {
+    "inputs": {
+      "primary_genes.csv": "91f69dc23ac542bcc92686546f3dfd5a6ceb3262d8fc1fe4008a79e63ee45a7a",
+      "primary_strata.csv": "23e8443084dc4937d21730feee577263c2135c5658f0d12b622fe2a9a7845027"
+    },
+    "code_sha256": "1e1e05b99eb8fd45d7391a106aa7c40257524242e821403ddd348599e519f09e",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "checks": [
+      "Unique genes and finite paired LFCs",
+      "Every n,m,k,a rebuilt from primary genes",
+      "Convolved null mean and variance match analytic formulas",
+      "All exposed genes covered by positive fixed weights"
+    ]
+  }
+}

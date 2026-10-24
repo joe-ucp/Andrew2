@@ -1,0 +1,115 @@
+{
+  "created": "2022-10-19T19:15:50.209716+00:00",
+  "modified": "2022-10-20T02:26:21.068668+00:00",
+  "id": 7226348,
+  "conceptrecid": "7226347",
+  "doi": "10.5281/zenodo.7226348",
+  "conceptdoi": "10.5281/zenodo.7226347",
+  "doi_url": "https://doi.org/10.5281/zenodo.7226348",
+  "metadata": {
+    "title": "TGDStanford/Rottner_etal_2022: Rottner_etal_2022",
+    "doi": "10.5281/zenodo.7226348",
+    "publication_date": "2022-10-19",
+    "description": "No description provided.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "TGDStanford",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/TGDStanford/Rottner_etal_2022/tree/v1.0.0",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "version": "v1.0.0",
+    "resource_type": {
+      "title": "Software",
+      "type": "software"
+    },
+    "license": {
+      "id": "other-open"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "7226347"
+          }
+        }
+      ]
+    }
+  },
+  "title": "TGDStanford/Rottner_etal_2022: Rottner_etal_2022",
+  "links": {
+    "self": "https://zenodo.org/api/records/7226348",
+    "self_html": "https://zenodo.org/records/7226348",
+    "preview_html": "https://zenodo.org/records/7226348?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.7226348",
+    "self_doi": "https://doi.org/10.5281/zenodo.7226348",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7226348",
+    "reserve_doi": "https://zenodo.org/api/records/7226348/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/7226347",
+    "parent_html": "https://zenodo.org/records/7226347",
+    "parent_doi": "https://doi.org/10.5281/zenodo.7226347",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.7226347",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:7226348/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:7226348/sequence/default",
+    "files": "https://zenodo.org/api/records/7226348/files",
+    "media_files": "https://zenodo.org/api/records/7226348/media-files",
+    "latest": "https://zenodo.org/api/records/7226348/versions/latest",
+    "latest_html": "https://zenodo.org/records/7226348/latest",
+    "versions": "https://zenodo.org/api/records/7226348/versions",
+    "draft": "https://zenodo.org/api/records/7226348/draft",
+    "access_links": "https://zenodo.org/api/records/7226348/access/links",
+    "access_grants": "https://zenodo.org/api/records/7226348/access/grants",
+    "access_users": "https://zenodo.org/api/records/7226348/access/users",
+    "access_request": "https://zenodo.org/api/records/7226348/access/request",
+    "access": "https://zenodo.org/api/records/7226348/access",
+    "communities": "https://zenodo.org/api/records/7226348/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/7226348/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/7226348/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/7226348/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/7226348/quota-increase",
+    "requests": "https://zenodo.org/api/records/7226348/requests"
+  },
+  "updated": "2022-10-20T02:26:21.068668+00:00",
+  "recid": "7226348",
+  "revision": 3,
+  "files": [
+    {
+      "id": "aba7852c-fb60-4836-a890-993cec486477",
+      "key": "TGDStanford/Rottner_etal_2022-v1.0.0.zip",
+      "size": 10474,
+      "checksum": "md5:2b5b3dcb4d69de64e10fbc7a36d40e0d",
+      "links": {
+        "self": "https://zenodo.org/api/records/7226348/files/TGDStanford/Rottner_etal_2022-v1.0.0.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "427580"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 36,
+    "unique_downloads": 32,
+    "views": 206,
+    "unique_views": 193,
+    "version_downloads": 36,
+    "version_unique_downloads": 32,
+    "version_unique_views": 192,
+    "version_views": 205
+  },
+  "state": "done",
+  "submitted": true
+}

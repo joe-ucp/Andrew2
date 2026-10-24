@@ -1,0 +1,74 @@
+{
+  "note": "Bundled source snapshots are hash-pinned below. The separately listed remote-only author archive is obtained from its original source into an external cache and is not redistributed. Never substitute a different hash silently.",
+  "files": [
+    {
+      "path": "data/source_documents/hgnc_complete_set.txt",
+      "sha256": "12363916be36f8f6f91879b0faade4eeaac973722de7136ec61329b77f2c2f91",
+      "bytes": 16982321,
+      "retrieval_url": "https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt",
+      "kind": "source_snapshot",
+      "retrieved_date": "2026-10-23"
+    },
+    {
+      "path": "data/source_documents/hgnc_retrieval.json",
+      "sha256": "77948719f8ed8ee86b06ed6dc972eaa4d16d470fefe18600d930a18fc4483da8",
+      "bytes": 311,
+      "retrieval_url": null,
+      "kind": "retrieval_metadata",
+      "retrieved_date": "2026-10-23"
+    },
+    {
+      "path": "data/source_documents/PMC9839450_EuropePMC_metadata.json",
+      "sha256": "a29138d030764b08ed3547f8ed0f281b1d91eda4665e1e4f9feec84071a5dcd4",
+      "bytes": 13983,
+      "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMC9839450&format=json&resultType=core",
+      "kind": "source_snapshot",
+      "retrieved_date": "2026-10-23"
+    },
+    {
+      "path": "data/source_documents/PMC9903835_EuropePMC_metadata.json",
+      "sha256": "55c94d0e6f800569d8c4b344a35926d06a30aa04b0f2b9c8ffee00afec86f42f",
+      "bytes": 11830,
+      "retrieval_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMC9903835&format=json&resultType=core",
+      "kind": "source_snapshot",
+      "retrieved_date": "2026-10-23"
+    },
+    {
+      "path": "data/source_documents/Zenodo_7106728_metadata.json",
+      "sha256": "50bbcf45fc2303e067da93dec3379e9c58d06e656ba1ee191b06b8ef0bf804b6",
+      "bytes": 17138,
+      "retrieval_url": "https://zenodo.org/api/records/7106728",
+      "kind": "source_snapshot",
+      "retrieved_date": "2026-10-23"
+    },
+    {
+      "path": "data/source_documents/Zenodo_7183895_metadata.json",
+      "sha256": "42c8226e3e91eb3630c54875398676afdd3766100234f3101d0c6587ef5082ee",
+      "bytes": 4580,
+      "retrieval_url": "https://zenodo.org/api/records/7183895",
+      "kind": "source_snapshot",
+      "retrieved_date": "2026-10-23"
+    },
+    {
+      "path": "data/source_documents/Zenodo_7226348_metadata.json",
+      "sha256": "2b102121fac622adb04a55c2c83e9d84741ec573800e7fe0e4221255bbf13937",
+      "bytes": 4294,
+      "retrieval_url": "https://zenodo.org/api/records/7226348",
+      "kind": "source_snapshot",
+      "retrieved_date": "2026-10-23"
+    }
+  ],
+  "remote_only_inputs": [
+    {
+      "sha256": "45868253fd8ede3575900d6eaa51f54d307270b901d8e4ae49ed1682887b6dbd",
+      "bytes": 10474,
+      "retrieval_url": "https://zenodo.org/api/records/7226348/files/TGDStanford/Rottner_etal_2022-v1.0.0.zip/content",
+      "kind": "remote_only_input",
+      "retrieved_date": "2026-10-23",
+      "id": "rottner_author_code_v1",
+      "file": "Rottner_etal_2022-v1.0.0.zip",
+      "storage": "external_cache_not_redistributed",
+      "license_status": "No explicit redistribution license is documented; retrieve directly from the original source."
+    }
+  ]
+}

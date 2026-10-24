@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "data_version": "source-snapshots-2026-10-23",
+  "inputs": [
+    {
+      "id": "D1",
+      "path": "data/raw/Supplementary_Data_09.CRISPR-KO-screen_results.csv",
+      "sha256": "d14accf5fa62320c114741de936c5f3ca05754babd0257670a55542a7c1187bc",
+      "url": "https://zenodo.org/records/7106728/files/Supplementary_Data_09.CRISPR-KO-screen_results.csv?download=1",
+      "version": "Zenodo 7106728 v2"
+    },
+    {
+      "id": "D2",
+      "path": "data/raw/41588_2022_1261_MOESM4_ESM.xlsx",
+      "sha256": "a8f47504edd26d999cb861f146f6fd6aa2ee2ec8368a01e29c808a10238a7690",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9839450/supplementaryFiles",
+      "version": "Rottner supplementary workbook"
+    },
+    {
+      "id": "D3",
+      "path": "data/raw/mmc6.xlsx",
+      "sha256": "e8f7c71f8f47b94bef33f1f90b487a7bcbf32f4328d61460c60080cd4c7abb8c",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9903835/supplementaryFiles",
+      "version": "Benaglio supplementary Table S5"
+    },
+    {
+      "id": "C1",
+      "path": "data/raw/16_CRISPR_figure.ipynb",
+      "sha256": "4b9da99ec36eb2d903a2b7fb987ceed24a7f56c9910da4860566171ee0360956",
+      "url": "https://raw.githubusercontent.com/Gaulton-Lab/BetaCells_cytokines_T1D/7d10581be640a2a8f4586c53a677b7c6cbbd7b1c/notebooks/16_CRISPR_figure.ipynb",
+      "version": "commit 7d10581be640a2a8f4586c53a677b7c6cbbd7b1c"
+    }
+  ]
+}

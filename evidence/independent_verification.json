@@ -1,0 +1,414 @@
+{
+  "implementation": "Standalone csv/openpyxl and stdlib source construction; manual linear quantiles/bisect; SciPy noncentral hypergeometric PMFs and independent convolution/root inversion. No import of analyze.py or exact_stats.py.",
+  "analysis_input_hashes_verified": true,
+  "analyses": {
+    "primary": {
+      "gene_count": 12184,
+      "stratum_count": 20,
+      "bins": [
+        3.4600664578375593,
+        7.178556873065872,
+        8.997318678845387,
+        10.025739322742254,
+        10.994883699016063,
+        18.89011199069037
+      ],
+      "gene_differences": [],
+      "stratum_differences": [],
+      "statistic_differences": {},
+      "statistics": {
+        "stratified_cmle": 1.234716586361042,
+        "stratified_ci95": [
+          0.6597371302935747,
+          2.133579162460411
+        ],
+        "stratified_upper_p": 0.26340922779507586,
+        "unstratified_table_A_by_L": [
+          [
+            14,
+            271
+          ],
+          [
+            465,
+            11434
+          ]
+        ],
+        "fisher_conditional_or": 1.2702654912998668,
+        "fisher_exact_ci95": [
+          0.6797890999305755,
+          2.190721666367118
+        ],
+        "fisher_upper_p": 0.23236843488864511,
+        "support_T": [
+          0,
+          274
+        ]
+      },
+      "passed": true
+    },
+    "no_expression": {
+      "gene_count": 17275,
+      "stratum_count": 4,
+      "bins": [
+        0,
+        1
+      ],
+      "gene_differences": [],
+      "stratum_differences": [],
+      "statistic_differences": {},
+      "statistics": {
+        "stratified_cmle": 1.3181171494956934,
+        "stratified_ci95": [
+          0.7247485502017003,
+          2.2239096018092606
+        ],
+        "stratified_upper_p": 0.18475330056940942,
+        "unstratified_table_A_by_L": [
+          [
+            15,
+            375
+          ],
+          [
+            498,
+            16387
+          ]
+        ],
+        "fisher_conditional_or": 1.3162011846506825,
+        "fisher_exact_ci95": [
+          0.723732056081348,
+          2.220534027781734
+        ],
+        "fisher_upper_p": 0.18606831771935023,
+        "support_T": [
+          0,
+          387
+        ]
+      },
+      "passed": true
+    },
+    "expression_ge1": {
+      "gene_count": 13718,
+      "stratum_count": 20,
+      "bins": [
+        1.0001833102453064,
+        5.4530715927900015,
+        8.473447313034244,
+        9.794489429645127,
+        10.85254462356921,
+        18.89011199069037
+      ],
+      "gene_differences": [],
+      "stratum_differences": [],
+      "statistic_differences": {},
+      "statistics": {
+        "stratified_cmle": 1.2883901049173359,
+        "stratified_ci95": [
+          0.6881100477980264,
+          2.227631960554209
+        ],
+        "stratified_upper_p": 0.21919524796244083,
+        "unstratified_table_A_by_L": [
+          [
+            14,
+            297
+          ],
+          [
+            466,
+            12941
+          ]
+        ],
+        "fisher_conditional_or": 1.3090127848986943,
+        "fisher_exact_ci95": [
+          0.7013624481954924,
+          2.2540727140172865
+        ],
+        "fisher_upper_p": 0.20219642021445655,
+        "support_T": [
+          0,
+          256
+        ]
+      },
+      "passed": true
+    },
+    "expression_ge100": {
+      "gene_count": 10143,
+      "stratum_count": 20,
+      "bins": [
+        6.65910314785673,
+        8.539316540865645,
+        9.550198437865882,
+        10.31794943995868,
+        11.192831312029739,
+        18.89011199069037
+      ],
+      "gene_differences": [],
+      "stratum_differences": [],
+      "statistic_differences": {},
+      "statistics": {
+        "stratified_cmle": 1.3484503054670525,
+        "stratified_ci95": [
+          0.7189561697469363,
+          2.336673605318783
+        ],
+        "stratified_upper_p": 0.17813377153851112,
+        "unstratified_table_A_by_L": [
+          [
+            14,
+            224
+          ],
+          [
+            437,
+            9468
+          ]
+        ],
+        "fisher_conditional_or": 1.354072783773293,
+        "fisher_exact_ci95": [
+          0.7222680330900928,
+          2.3451340504480798
+        ],
+        "fisher_upper_p": 0.17436885566461524,
+        "support_T": [
+          0,
+          236
+        ]
+      },
+      "passed": true
+    },
+    "survival_fdr005": {
+      "gene_count": 12184,
+      "stratum_count": 20,
+      "bins": [
+        3.4600664578375593,
+        7.178556873065872,
+        8.997318678845387,
+        10.025739322742254,
+        10.994883699016063,
+        18.89011199069037
+      ],
+      "gene_differences": [],
+      "stratum_differences": [],
+      "statistic_differences": {},
+      "statistics": {
+        "stratified_cmle": 1.0654589824049407,
+        "stratified_ci95": [
+          0.28252217768687804,
+          2.849081569482817
+        ],
+        "stratified_upper_p": 0.523722873316119,
+        "unstratified_table_A_by_L": [
+          [
+            4,
+            95
+          ],
+          [
+            475,
+            11610
+          ]
+        ],
+        "fisher_conditional_or": 1.0291388161270494,
+        "fisher_exact_ci95": [
+          0.27362316545111287,
+          2.740319140569216
+        ],
+        "fisher_upper_p": 0.549469158102184,
+        "support_T": [
+          0,
+          95
+        ]
+      },
+      "passed": true
+    },
+    "three_directional_guides": {
+      "gene_count": 11818,
+      "stratum_count": 20,
+      "bins": [
+        3.4600664578375593,
+        7.125780173006585,
+        8.97790296739298,
+        10.019226003627377,
+        10.98190651206304,
+        18.89011199069037
+      ],
+      "gene_differences": [],
+      "stratum_differences": [],
+      "statistic_differences": {},
+      "statistics": {
+        "stratified_cmle": 1.764207961782515,
+        "stratified_ci95": [
+          0.6298407549844169,
+          3.997765021272844
+        ],
+        "stratified_upper_p": 0.13852223384613555,
+        "unstratified_table_A_by_L": [
+          [
+            6,
+            269
+          ],
+          [
+            140,
+            11403
+          ]
+        ],
+        "fisher_conditional_or": 1.816606524209757,
+        "fisher_exact_ci95": [
+          0.649670448653183,
+          4.106613364204202
+        ],
+        "fisher_upper_p": 0.12545378349891456,
+        "support_T": [
+          0,
+          145
+        ]
+      },
+      "passed": true
+    },
+    "survival_harming": {
+      "gene_count": 12184,
+      "stratum_count": 20,
+      "bins": [
+        3.4600664578375593,
+        7.178556873065872,
+        8.997318678845387,
+        10.025739322742254,
+        10.994883699016063,
+        18.89011199069037
+      ],
+      "gene_differences": [],
+      "stratum_differences": [],
+      "statistic_differences": {},
+      "statistics": {
+        "stratified_cmle": 0.9802883515840392,
+        "stratified_ci95": [
+          0.47963038732611063,
+          1.801436222151847
+        ],
+        "stratified_upper_p": 0.569321141670219,
+        "unstratified_table_A_by_L": [
+          [
+            11,
+            275
+          ],
+          [
+            468,
+            11430
+          ]
+        ],
+        "fisher_conditional_or": 0.9769249298569458,
+        "fisher_exact_ci95": [
+          0.47860257923505817,
+          1.7922076246407737
+        ],
+        "fisher_upper_p": 0.573486279598247,
+        "support_T": [
+          0,
+          271
+        ]
+      },
+      "passed": true
+    },
+    "positive_vs_negative": {
+      "gene_count": 571,
+      "stratum_count": 20,
+      "bins": [
+        3.4600664578375593,
+        7.178556873065872,
+        8.997318678845387,
+        10.025739322742254,
+        10.994883699016063,
+        18.89011199069037
+      ],
+      "gene_differences": [],
+      "stratum_differences": [],
+      "statistic_differences": {},
+      "statistics": {
+        "stratified_cmle": 1.1871490698685734,
+        "stratified_ci95": [
+          0.48299228291470064,
+          2.98627805841012
+        ],
+        "stratified_upper_p": 0.4204358984816732,
+        "unstratified_table_A_by_L": [
+          [
+            14,
+            271
+          ],
+          [
+            11,
+            275
+          ]
+        ],
+        "fisher_conditional_or": 1.2909366811348109,
+        "fisher_exact_ci95": [
+          0.5336826896499469,
+          3.2029726844795245
+        ],
+        "fisher_upper_p": 0.3383489861676587,
+        "support_T": [
+          0,
+          25
+        ]
+      },
+      "passed": true
+    },
+    "three_guides_fixed_universe": {
+      "gene_count": 12184,
+      "stratum_count": 20,
+      "bins": [
+        3.4600664578375593,
+        7.178556873065872,
+        8.997318678845387,
+        10.025739322742254,
+        10.994883699016063,
+        18.89011199069037
+      ],
+      "gene_differences": [],
+      "stratum_differences": [],
+      "statistic_differences": {},
+      "statistics": {
+        "stratified_cmle": 1.7437597566831458,
+        "stratified_ci95": [
+          0.6227650810496037,
+          3.949356061285105
+        ],
+        "stratified_upper_p": 0.14365368630819625,
+        "unstratified_table_A_by_L": [
+          [
+            6,
+            279
+          ],
+          [
+            140,
+            11759
+          ]
+        ],
+        "fisher_conditional_or": 1.8061816935652548,
+        "fisher_exact_ci95": [
+          0.6461463305488147,
+          4.081185188696692
+        ],
+        "fisher_upper_p": 0.1277415195767131,
+        "support_T": [
+          0,
+          145
+        ]
+      },
+      "passed": true
+    }
+  },
+  "candidate_checks": {
+    "all_source_427_accounted_exactly_once": true,
+    "class_counts": {
+      "Supported cross-screen conflict": 14,
+      "Survival-favoring with higher-content evidence": 2,
+      "Content effect unresolved": 269,
+      "Comparison unavailable or inconsistent": 142
+    },
+    "differences": [],
+    "passed": true
+  },
+  "threshold_free_diagnostic": {
+    "differences": [],
+    "passed": true
+  },
+  "passed": true
+}

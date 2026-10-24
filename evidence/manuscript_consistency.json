@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "method": "Generate every result table and headline fact from scientific outputs; fixed label and membership assertions block inconsistency.",
+  "checks": [
+    "All427 candidates accounted with independent evidence and eligibility axes",
+    "Primary2x2 and percentages tied to model result",
+    "Candidate rows tied to candidate CSV",
+    "Higher-content comparators RAB14 and LRRC61 tied to candidate CSV",
+    "Information diagnostic counts tied to primary result",
+    "NUPL1 retains published evidence outside primary",
+    "Annotations cover all14 plus NUPL1",
+    "All placeholders resolved"
+  ],
+  "generated_facts": {
+    "title": "Cross-screen analysis of insulin-content effects among cytokine-survival-favoring beta-cell knockouts",
+    "mapping_sentence": "A separate one-to-one HGNC/Ensembl mapping sensitivity includes 12,826 genes and 306 exposed targets, with 14 overlaps: OR 1.1444 (exact95% CI 0.6124-1.9735), p=0.3537. NUPL1 enters as NUP58, while the SLC24A6/SLC8B1 many-to-one collision is excluded rather than merged. Every mapping and exclusion is recorded; this post-review sensitivity does not alter the exact-symbol primary.",
+    "primary_abstract": "Among 12,184 eligible genes, 14 of 285 survival-favoring targets (4.91%) had published lower-content calls, versus 465 of 11,899 other genes (3.91%). The conditional odds ratio was 1.2347 (exact95% CI 0.6597-2.1336), with one-sided enrichment p=0.2634; enrichment remains unresolved.",
+    "accounting_abstract": "Across all 427 source survival-favoring genes, 15 have published lower-content and 2 higher-content evidence; 285 meet primary eligibility. NUPL1 retains lower-content evidence despite missing the exact expression-symbol match.",
+    "semantic_finding": "All 142,180 S8 FDR values are stored as zero (99,564) or one (42,616), not merely displayed that way. All 2,384 uniquely linked S7 rows have S8 FDR values equal to nearest-integer rounding of the continuous S7 value. For a matched TOMM6 guide, S7 FDR 0.42555 becomes S8 zero. The linked rows demonstrate lost FDR precision.",
+    "rule_discrepancy": "Among primary genes absent from Table S1, 2,421 nevertheless satisfy the former positive-LFC/stored-zero rule in at least two guides per replicate.",
+    "nupl1_sentence": "NUPL1 illustrates the distinction: survival beta 0.40897, survival FDR 0.05641, a published Decrease call and 4 covered guides are available. Its primary exclusion is no exact expression symbol. The evidence field preserves the lower-content call independently of this adjustment-variable exclusion.",
+    "primary_results": "The published-only primary comparison has 14/285 lower-content calls among survival-favoring genes versus 465/11,899 among the remaining eligible genes. The conditional odds ratio is 1.2347 (exact95% CI 0.6597-2.1336); one-sided enrichment p=0.2634. Removing the invalid stored-FDR audit leaves the original primary membership, strata and numerical estimate unchanged. The unstratified conditional estimate is 1.2703 (0.6798-2.1907).",
+    "accounting_results": "Of 427 source survival-favoring genes, 390 have common coverage and 285 enter the primary comparison. Across the full resource, 15 have published lower-content evidence, 2 higher-content evidence, 384 have an insulin measurement without a published directional call, and 26 lack an exact insulin-screen gene measurement. Only 14 of the 15 lower-content candidates are primary-eligible.",
+    "guide_concordance": "All 14 primary candidates and NUPL1 have two positive guides with FDR <0.10 in each replicate in the recovered S7 subset, with the same two guide identities paired. Only two of four guides per replicate are represented there; the missing probabilities remain unknown. This supports the available selected-guide evidence, not full reconstruction of hit selection or a third significant guide. Only 4 of the 14 primary candidates meet source survival FDR <0.05. CREB3 and PDS5A have three positive stored-zero guides per replicate but only two identical identities meeting that provisional rule in both. 10 of 14 have an opposing negative-LFC stored-zero guide in at least one replicate; stored zero does not establish its significance.",
+    "sensitivity_sentence": "The direct survival-favoring versus survival-harming estimate is 1.1871 (exact95% CI 0.4830-2.9863); it does not establish direction-specific enrichment. Without the expression restriction, the published catalog includes TOMM6 and yields 17,276 genes, 390 exposed targets and 15 overlaps, with OR 1.3155 (exact95% CI 0.7233-2.2194). All 7 revised catalog intervals include1.",
+    "precision_sentence": "Only 14 exposed outcome-positive genes and 12 informative strata among 20 retained strata support the primary association. Holding observed margins fixed, the null expected overlap is 11.52; the original lower-95%-bound criterion first succeeds at 19 overlaps. Its conditional probability is 31.3% if the common OR is1.5 and 75.7% if it is2.0.",
+    "continuous_sentence": "We compare mean per-gene median LFC within each stratum and weight differences by the observed share of exposed genes, m_s/285. This targets the exposure-group stratum composition rather than weighting strata equally. For r0, the contrast is -0.0393 log2 units (95% gene-bootstrap percentile interval -0.1073 to 0.0310). For r1, the contrast is 0.0341 log2 units (95% gene-bootstrap percentile interval -0.1038 to 0.1632).",
+    "influence_sentence": "Omitting each informative stratum in turn gives conditional OR estimates from 0.9485 to 1.4958; all 12 intervals include1. This is an influence diagnostic with changing fixed margins, not a set of independent replication tests."
+  },
+  "dependencies": {
+    "manuscript/narrative.json": "cc8e76403da3fd04df40cd53c3ea68314e08234de54213679237e0f7ce42130e",
+    "results/results.json": "59819319f7dafc24e090d8efe3ab6259a5b8385a582fa26425c4ac802463a911",
+    "results/candidate_accounting.json": "80d41f3fe3458211e25731629b7ceb187a1fd14f04a168f094ac5c4063318179",
+    "results/candidate_table_427.csv": "0c8ab8c28fbf33df76b4eadd04009096b7c29d54bbad6c21096cb6016da74ec6",
+    "results/conditional_information.json": "378cbab201869dd979e85fe9a9a92d3a816c33292ee34f5b87937c5a492813b2",
+    "results/continuous_summary.json": "db3d5bc60a674bfcdb6032f069e8f11ff87c3b3388fc7f92225a33bad8d44d3c",
+    "results/stratum_influence.csv": "2a3bd05d2de7801d8fc1c153c7446ddf53d176c4626599e17911375378963894",
+    "results/legacy_protocol/results.json": "37d681f946e8bceadb33948b0020624490826cf8fdd2e0e70961451daa44f136",
+    "evidence/source_semantics_audit.json": "40da53048fa88b0a989156ffd36aaed24bd15d4ca2c4efdc726457ab5ca96513",
+    "docs/source_design_comparison.json": "016e915b5968153e90ddffca1ec886e3a19b2b33189620a4b11c969e4470cc1b",
+    "docs/candidate_annotations.json": "0a5351342fd89843fc9e06c4c8197fcd7db502dfa42b7fc6111b67358dcb3e3b",
+    "evidence/candidate_S7_selected_guide_evidence.csv": "2c04edff65535ba32e1b926f2759c625e2e6ba6d360a4a2199766ed0a1993e2c",
+    "evidence/identifier_mapping_sensitivity.json": "331ee3755ad220f6b4538d539d6df0497afae961c1839b74959ff96bf0b102b4"
+  },
+  "generated_content_sha256": "a27779c964d17e17469dbf4e5f49aa5557b675a93d9f3a9fa75963e80c074f7f"
+}

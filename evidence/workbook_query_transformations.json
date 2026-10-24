@@ -1,0 +1,65 @@
+{
+  "calcPr_attributes": {
+    "calcId": "0"
+  },
+  "custom_xml_part": "customXml/item1.xml",
+  "documentation": {
+    "column_conversion": "https://learn.microsoft.com/en-us/powerquery-m/table-transformcolumntypes",
+    "integer_conversion": "https://learn.microsoft.com/en-us/powerquery-m/int64-from"
+  },
+  "embedded_package_member": "Formulas/Section1.m",
+  "finding": "The saved Table S8 import query explicitly coerces all four p/FDR fields to Int64.Type. The Table S7 query coerces p.low only. This identifies a concrete type-conversion stage consistent with the stored binary cells; it does not establish author intent or recover original values.",
+  "fullPrecision_attribute_present": false,
+  "mashup_package_bytes": 1884,
+  "mashup_version": 0,
+  "producer": {
+    "AppVersion": "16.0300",
+    "Application": "Microsoft Excel"
+  },
+  "queries": {
+    "#\"RRApaired_screen sgrna_summary (1)\"": {
+      "column_types": {
+        "FDR": "Int64.Type",
+        "Gene": "type text",
+        "LFC": "type number",
+        "adj_var": "type number",
+        "control_count": "type number",
+        "control_mean": "type number",
+        "control_var": "Int64.Type",
+        "high_in_treatment": "type logical",
+        "p.high": "Int64.Type",
+        "p.low": "Int64.Type",
+        "p.twosided": "Int64.Type",
+        "score": "type number",
+        "sgrna": "type text",
+        "treat_mean": "type number",
+        "treatment_count": "type number"
+      },
+      "query_sha256": "15396699b0f39c0bf8f99d1c96d473bba481435f3473f00c2359b4c7f15358fc",
+      "query_with_source_path_redacted": "shared #\"RRApaired_screen sgrna_summary (1)\" = let\r\n    Source = Csv.Document(File.Contents(\"<source path redacted>\"),[Delimiter=\"\t\", Columns=15, Encoding=1252, QuoteStyle=QuoteStyle.None]),\r\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\r\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"sgrna\", type text}, {\"Gene\", type text}, {\"control_count\", type number}, {\"treatment_count\", type number}, {\"control_mean\", type number}, {\"treat_mean\", type number}, {\"LFC\", type number}, {\"control_var\", Int64.Type}, {\"adj_var\", type number}, {\"score\", type number}, {\"p.low\", Int64.Type}, {\"p.high\", Int64.Type}, {\"p.twosided\", Int64.Type}, {\"FDR\", Int64.Type}, {\"high_in_treatment\", type logical}})\r\nin\r\n    #\"Changed Type\";"
+    },
+    "sgRNA_hits": {
+      "column_types": {
+        "FDR": "type number",
+        "Gene": "type text",
+        "LFC": "type number",
+        "adj_var": "type number",
+        "control_count": "type number",
+        "control_mean": "type number",
+        "control_var": "Int64.Type",
+        "high_in_treatment": "type logical",
+        "p.high": "type number",
+        "p.low": "Int64.Type",
+        "p.twosided": "type number",
+        "score": "type number",
+        "sgrna": "type text",
+        "treat_mean": "type number",
+        "treatment_count": "type number"
+      },
+      "query_sha256": "f9c98e26000a7d1bc279f0d1bc7934b4b4d69b322ed73b364c8dbb5249b2672a",
+      "query_with_source_path_redacted": "shared sgRNA_hits = let\r\n    Source = Csv.Document(File.Contents(\"<source path redacted>\"),[Delimiter=\"\t\", Columns=15, Encoding=1252, QuoteStyle=QuoteStyle.None]),\r\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),\r\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"sgrna\", type text}, {\"Gene\", type text}, {\"control_count\", type number}, {\"treatment_count\", type number}, {\"control_mean\", type number}, {\"treat_mean\", type number}, {\"LFC\", type number}, {\"control_var\", Int64.Type}, {\"adj_var\", type number}, {\"score\", type number}, {\"p.low\", Int64.Type}, {\"p.high\", type number}, {\"p.twosided\", type number}, {\"FDR\", type number}, {\"high_in_treatment\", type logical}})\r\nin\r\n    #\"Changed Type\";"
+    }
+  },
+  "raw_M_sha256": "ccc0b0fa91b2441b3a76a5c1d7cba5c37e5bf8961fa2642194619203c2ef7c29",
+  "workbook_sha256": "a8f47504edd26d999cb861f146f6fd6aa2ee2ec8368a01e29c808a10238a7690"
+}

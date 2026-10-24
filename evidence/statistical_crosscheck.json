@@ -1,0 +1,320 @@
+{
+  "status": "passed",
+  "reviewed_at_utc": "2026-10-24T17:39:01.652228+00:00",
+  "scope": "Independent downstream analysis selection and stratification from the public gene ledger, numerical inference, candidate classification and descriptive diagnostics. Raw source reconstruction is a separate evidence/independent_verification.json task.",
+  "independence": "Does not import analyze.py, exact_stats.py, pandas or independent_verify.py. SciPy Fisher noncentral hypergeometric PMFs and Brent roots; central hypergeometric PMFs for null tails; explicit linear quantiles and bisect for strata.",
+  "python_version": "3.12.14",
+  "numpy_version": "2.5.4",
+  "scipy_version": "1.18.1",
+  "numeric_tolerance": 1e-08,
+  "maximum_absolute_numeric_difference": 5.009770376318556e-12,
+  "analyses": [
+    {
+      "name": "primary",
+      "passed": true,
+      "gene_count": 12184,
+      "gene_selection_label_or_stratum_mismatches": 0,
+      "stratum_margin_mismatches": 0,
+      "linear_quantile_boundaries_match": true,
+      "joint_table_matches": true,
+      "fractions_match": true,
+      "unstratified_sample_OR_and_Fisher_tail_match": true,
+      "independent_scipy": {
+        "conditional_mle": 1.2347165863606744,
+        "ci_lower": 0.6597371302935717,
+        "ci_upper": 2.1335791624600864,
+        "p_enrichment": 0.26340922779500925,
+        "support_lower": 0,
+        "support_upper": 274,
+        "observed_total": 14,
+        "n_informative_strata": 12
+      },
+      "absolute_numeric_differences": {
+        "conditional_mle": 5.058176100192213e-13,
+        "ci_lower": 4.382050278195493e-13,
+        "ci_upper": 1.6271428648906294e-12,
+        "p_enrichment": 1.6653345369377348e-16
+      }
+    },
+    {
+      "name": "no_expression",
+      "passed": true,
+      "gene_count": 17275,
+      "gene_selection_label_or_stratum_mismatches": 0,
+      "stratum_margin_mismatches": 0,
+      "linear_quantile_boundaries_match": true,
+      "joint_table_matches": true,
+      "fractions_match": true,
+      "unstratified_sample_OR_and_Fisher_tail_match": true,
+      "independent_scipy": {
+        "conditional_mle": 1.318117149496296,
+        "ci_lower": 0.7247485502017125,
+        "ci_upper": 2.223909601809245,
+        "p_enrichment": 0.1847533005675384,
+        "support_lower": 0,
+        "support_upper": 387,
+        "observed_total": 15,
+        "n_informative_strata": 3
+      },
+      "absolute_numeric_differences": {
+        "conditional_mle": 1.4166445794216997e-12,
+        "ci_lower": 1.595168441781425e-12,
+        "ci_upper": 4.342748383123762e-12,
+        "p_enrichment": 4.163336342344337e-16
+      }
+    },
+    {
+      "name": "expression_ge1",
+      "passed": true,
+      "gene_count": 13718,
+      "gene_selection_label_or_stratum_mismatches": 0,
+      "stratum_margin_mismatches": 0,
+      "linear_quantile_boundaries_match": true,
+      "joint_table_matches": true,
+      "fractions_match": true,
+      "unstratified_sample_OR_and_Fisher_tail_match": true,
+      "independent_scipy": {
+        "conditional_mle": 1.2883901049173523,
+        "ci_lower": 0.6881100477980259,
+        "ci_upper": 2.2276319605542376,
+        "p_enrichment": 0.2191952479625606,
+        "support_lower": 0,
+        "support_upper": 256,
+        "observed_total": 14,
+        "n_informative_strata": 10
+      },
+      "absolute_numeric_differences": {
+        "conditional_mle": 5.60218538225854e-13,
+        "ci_lower": 3.658184866139891e-13,
+        "ci_upper": 6.550315845288424e-13,
+        "p_enrichment": 0.0
+      }
+    },
+    {
+      "name": "expression_ge100",
+      "passed": true,
+      "gene_count": 10143,
+      "gene_selection_label_or_stratum_mismatches": 0,
+      "stratum_margin_mismatches": 0,
+      "linear_quantile_boundaries_match": true,
+      "joint_table_matches": true,
+      "fractions_match": true,
+      "unstratified_sample_OR_and_Fisher_tail_match": true,
+      "independent_scipy": {
+        "conditional_mle": 1.3484503054668528,
+        "ci_lower": 0.7189561697469362,
+        "ci_upper": 2.3366736053184205,
+        "p_enrichment": 0.17813377153850685,
+        "support_lower": 0,
+        "support_upper": 236,
+        "observed_total": 14,
+        "n_informative_strata": 11
+      },
+      "absolute_numeric_differences": {
+        "conditional_mle": 7.254197242900773e-13,
+        "ci_lower": 2.5757174171303632e-14,
+        "ci_upper": 1.3860024239420454e-12,
+        "p_enrichment": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "survival_fdr005",
+      "passed": true,
+      "gene_count": 12184,
+      "gene_selection_label_or_stratum_mismatches": 0,
+      "stratum_margin_mismatches": 0,
+      "linear_quantile_boundaries_match": true,
+      "joint_table_matches": true,
+      "fractions_match": true,
+      "unstratified_sample_OR_and_Fisher_tail_match": true,
+      "independent_scipy": {
+        "conditional_mle": 1.065458982404837,
+        "ci_lower": 0.28252217768688304,
+        "ci_upper": 2.849081569482829,
+        "p_enrichment": 0.5237228733161444,
+        "support_lower": 0,
+        "support_upper": 95,
+        "observed_total": 4,
+        "n_informative_strata": 10
+      },
+      "absolute_numeric_differences": {
+        "conditional_mle": 5.804245972740318e-13,
+        "ci_lower": 1.482147737874584e-14,
+        "ci_upper": 9.325873406851315e-15,
+        "p_enrichment": 1.1102230246251565e-16
+      }
+    },
+    {
+      "name": "three_directional_guides",
+      "passed": true,
+      "gene_count": 11818,
+      "gene_selection_label_or_stratum_mismatches": 0,
+      "stratum_margin_mismatches": 0,
+      "linear_quantile_boundaries_match": true,
+      "joint_table_matches": true,
+      "fractions_match": true,
+      "unstratified_sample_OR_and_Fisher_tail_match": true,
+      "independent_scipy": {
+        "conditional_mle": 1.7642079617820607,
+        "ci_lower": 0.6298407549844174,
+        "ci_upper": 3.9977650212839793,
+        "p_enrichment": 0.13852223384628237,
+        "support_lower": 0,
+        "support_upper": 145,
+        "observed_total": 6,
+        "n_informative_strata": 7
+      },
+      "absolute_numeric_differences": {
+        "conditional_mle": 4.547473508864641e-13,
+        "ci_lower": 1.8263168755083825e-13,
+        "ci_upper": 4.6638248818453576e-12,
+        "p_enrichment": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "survival_harming",
+      "passed": true,
+      "gene_count": 12184,
+      "gene_selection_label_or_stratum_mismatches": 0,
+      "stratum_margin_mismatches": 0,
+      "linear_quantile_boundaries_match": true,
+      "joint_table_matches": true,
+      "fractions_match": true,
+      "unstratified_sample_OR_and_Fisher_tail_match": true,
+      "independent_scipy": {
+        "conditional_mle": 0.9802883515841821,
+        "ci_lower": 0.47963038732614083,
+        "ci_upper": 1.8014362221517322,
+        "p_enrichment": 0.569321141670194,
+        "support_lower": 0,
+        "support_upper": 271,
+        "observed_total": 11,
+        "n_informative_strata": 12
+      },
+      "absolute_numeric_differences": {
+        "conditional_mle": 3.2029934260435766e-13,
+        "ci_lower": 1.7275070263167436e-13,
+        "ci_upper": 1.2654322034677534e-12,
+        "p_enrichment": 3.3306690738754696e-16
+      }
+    },
+    {
+      "name": "positive_vs_negative",
+      "passed": true,
+      "gene_count": 571,
+      "gene_selection_label_or_stratum_mismatches": 0,
+      "stratum_margin_mismatches": 0,
+      "linear_quantile_boundaries_match": true,
+      "joint_table_matches": true,
+      "fractions_match": true,
+      "unstratified_sample_OR_and_Fisher_tail_match": true,
+      "independent_scipy": {
+        "conditional_mle": 1.1871490698685734,
+        "ci_lower": 0.48299228291470064,
+        "ci_upper": 2.9862780584094066,
+        "p_enrichment": 0.42043589848167695,
+        "support_lower": 0,
+        "support_upper": 25,
+        "observed_total": 14,
+        "n_informative_strata": 8
+      },
+      "absolute_numeric_differences": {
+        "conditional_mle": 6.308287225920139e-13,
+        "ci_lower": 2.2132295995902496e-13,
+        "ci_upper": 7.664979762012081e-13,
+        "p_enrichment": 5.551115123125783e-17
+      }
+    },
+    {
+      "name": "three_guides_fixed_universe",
+      "passed": true,
+      "gene_count": 12184,
+      "gene_selection_label_or_stratum_mismatches": 0,
+      "stratum_margin_mismatches": 0,
+      "linear_quantile_boundaries_match": true,
+      "joint_table_matches": true,
+      "fractions_match": true,
+      "unstratified_sample_OR_and_Fisher_tail_match": true,
+      "independent_scipy": {
+        "conditional_mle": 1.743759756683513,
+        "ci_lower": 0.6227650810496059,
+        "ci_upper": 3.949356061284483,
+        "p_enrichment": 0.1436536863083307,
+        "support_lower": 0,
+        "support_upper": 145,
+        "observed_total": 6,
+        "n_informative_strata": 7
+      },
+      "absolute_numeric_differences": {
+        "conditional_mle": 1.4477308241112041e-12,
+        "ci_lower": 1.532107773982716e-14,
+        "ci_upper": 5.009770376318556e-12,
+        "p_enrichment": 2.7755575615628914e-17
+      }
+    }
+  ],
+  "failed_analyses": [],
+  "candidate_check": {
+    "membership_matches": true,
+    "classification_mismatches": [],
+    "sorting_matches": true,
+    "class_counts": {
+      "Supported cross-screen conflict": 14,
+      "Survival-favoring with higher-content evidence": 2,
+      "Content effect unresolved": 269,
+      "Comparison unavailable or inconsistent": 142
+    }
+  },
+  "threshold_free_check": {
+    "quantile_or_count_mismatches": [],
+    "strata_with_both_exposure_groups": 12,
+    "median_contrast_sign_counts": {
+      "r0": {
+        "1": 4,
+        "-1": 8
+      },
+      "r1": {
+        "-1": 5,
+        "1": 7
+      }
+    },
+    "opposite_sign_strata": [
+      "1|3-5|4+",
+      "1|6+|4+",
+      "2|6+|3",
+      "3|6+|3",
+      "5|6+|3"
+    ]
+  },
+  "analysis_input_hashes_match": true,
+  "file_sha256": {
+    "results/primary_genes.csv": "9b6c22987bf140db31aec4960d34fc85e7babae8b05804be8f57097c8d65f927",
+    "results/primary_strata.csv": "23e8443084dc4937d21730feee577263c2135c5658f0d12b622fe2a9a7845027",
+    "results/no_expression_genes.csv": "550283a4f0986376676eae18bad47f0751d198c40acb092958225d06466d5136",
+    "results/no_expression_strata.csv": "fcdda1960773e206bb73b33ce7d21513442efe4442652d7c9efe0e2e5fd99f2e",
+    "results/expression_ge1_genes.csv": "7f676b7381f0ab3180c70acbed6b6358ab43a3d5baea5315305107193c9b5c97",
+    "results/expression_ge1_strata.csv": "0471e84eca792c98b751b2ef6f3e00bdf3ee4640ee6bb2087b4493feefad45b9",
+    "results/expression_ge100_genes.csv": "c88f05cb591de6aad3df60fd1076ef4268b0fa772b1fe41fae0cfc4cfe904b1f",
+    "results/expression_ge100_strata.csv": "acef8b719bac96be81d2969f3b8ebd0e96c37c93bf2976961ca976ce49868ec0",
+    "results/survival_fdr005_genes.csv": "b966dd5039448535e2f1d9fa020d93a1c4e8189dde05466724269e7378fe8306",
+    "results/survival_fdr005_strata.csv": "f85ee1ca1c5acbc216d532f02995952585243b26713de527ca1deef3ad7a7a8b",
+    "results/three_directional_guides_genes.csv": "cc81ce503c1205d2e5ce4496af829e4a43eb7e66682fc9a632a734210b2a322e",
+    "results/three_directional_guides_strata.csv": "8606a2feaf1b7e74e9e84ac7d1ac71b7ebfd91f4901364089da5369060f45dec",
+    "results/survival_harming_genes.csv": "4dae06dea4e6eaa9eeefa463dbd4cb15513cf61ef195d31764a2335ce95413c0",
+    "results/survival_harming_strata.csv": "c25ef62afdb9898ea3e064da82cb481b0688fbf823cc270202efaeb4919cce18",
+    "results/positive_vs_negative_genes.csv": "b2bdbfd6e06e2637fd40864a33798eaf945f5ff1e0fc7e451d8fed80746736db",
+    "results/positive_vs_negative_strata.csv": "44ae3f6de6e7741f5b1eaba4f44894a15c2e0aa89944c15a8e0f340cbea75ff5",
+    "results/three_guides_fixed_universe_genes.csv": "a70636d6bb0515eec1ef585db5edd4241917b45649b76d1a6d41873a9d59ee5d",
+    "results/three_guides_fixed_universe_strata.csv": "5079f11985e371abefe6739020b59781b9210a17446425097bf014e6a8786b0c",
+    "results/results.json": "37d681f946e8bceadb33948b0020624490826cf8fdd2e0e70961451daa44f136",
+    "results/gene_eligibility_ledger.csv": "ca0c56477b11d4873bc5b29dcc69becb5555431847995f4bab1180965ca76bc7",
+    "results/candidate_table_427.csv": "8a8d9c1e0affda1095c54ac22ae8769baef8f3f2a0368daf6837c843dd94db96",
+    "results/threshold_free_stratum_diagnostics.csv": "430bacd50118e5db04fb5216eca7aeabd59ab9b49245cff93bafd28a2ca74d39",
+    "code/analyze.py": "528ac722e7843fb632ae6bcf909d57e1cfc9fa68fbfc0e1ad929bb6d40b894d2",
+    "code/exact_stats.py": "765c216550ec6826dc0ce3375a65d155161f0e18696f7735998a10fdd03bd2c4",
+    "config.json": "add98b216a764e429c6d57b8ac4ed0a98c05920f088be82c54b8009a8b3e446c",
+    "evidence/analysis_inputs.json": "ff437730658043a49d4d3aa0ce1b1f999e412c260eb5ba097af9efdfccad9dad",
+    "tests/run_statistical_crosscheck.py": "4c4d35a7d97d056d842a961eb3641f6fe385240aff6a73ab0606e134d3a5d123"
+  },
+  "command": "python tests/run_statistical_crosscheck.py"
+}

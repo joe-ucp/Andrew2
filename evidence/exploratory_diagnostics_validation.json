@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "scope": "Computational checks only; no label semantic or biological validation.",
+  "estimator_crosschecks": [
+    {
+      "omitted": null,
+      "max_abs_difference": 1.6213697051625786e-12
+    },
+    {
+      "omitted": "1|3-5|4+",
+      "max_abs_difference": 1.6369128275073308e-12
+    },
+    {
+      "omitted": "1|6+|3",
+      "max_abs_difference": 1.7741363933510002e-12
+    },
+    {
+      "omitted": "1|6+|4+",
+      "max_abs_difference": 1.965094753586527e-12
+    },
+    {
+      "omitted": "2|3-5|4+",
+      "max_abs_difference": 8.850697952311748e-13
+    },
+    {
+      "omitted": "2|6+|3",
+      "max_abs_difference": 1.5942802633617248e-12
+    },
+    {
+      "omitted": "2|6+|4+",
+      "max_abs_difference": 1.247890679678676e-12
+    },
+    {
+      "omitted": "3|6+|3",
+      "max_abs_difference": 6.785683126508957e-13
+    },
+    {
+      "omitted": "3|6+|4+",
+      "max_abs_difference": 1.4597212327771558e-12
+    },
+    {
+      "omitted": "4|6+|3",
+      "max_abs_difference": 5.913047829153584e-13
+    },
+    {
+      "omitted": "4|6+|4+",
+      "max_abs_difference": 1.3455903058456897e-12
+    },
+    {
+      "omitted": "5|6+|3",
+      "max_abs_difference": 1.5925039065223245e-12
+    },
+    {
+      "omitted": "5|6+|4+",
+      "max_abs_difference": 6.52367049269742e-13
+    }
+  ],
+  "distribution_crosschecks": [
+    {
+      "theta": 1.0,
+      "max_abs_pmf_difference": 4.85722573273506e-17
+    },
+    {
+      "theta": 1.5,
+      "max_abs_pmf_difference": 3.656797087359109e-15
+    },
+    {
+      "theta": 2.0,
+      "max_abs_pmf_difference": 4.676814491233472e-15
+    }
+  ],
+  "criterion_boundary_checks": [
+    {
+      "hypothetical_total": 18,
+      "lower_95": 0.940301196581732,
+      "null_upper_tail": 0.04052227264954872
+    },
+    {
+      "hypothetical_total": 19,
+      "lower_95": 1.0140296260434216,
+      "null_upper_tail": 0.022233662418668487
+    }
+  ],
+  "continuous_algebra_checks": [
+    {
+      "source_label": "r0",
+      "independent_delta": -0.03926085864649294,
+      "independent_scaled_delta": -0.06016987079685183
+    },
+    {
+      "source_label": "r1",
+      "independent_delta": 0.03412001713127179,
+      "independent_scaled_delta": 0.03095283246898036
+    }
+  ],
+  "seeded_bootstrap_exact_reproduction": true,
+  "singleton_exposure_flag_verified": true,
+  "code_sha256": "1e1e05b99eb8fd45d7391a106aa7c40257524242e821403ddd348599e519f09e",
+  "validation_sha256": "6a6908623b6a5ea76a4743a9a6e4ddc7e72bdb0a6dfd51f9ceed1341e41671c1"
+}

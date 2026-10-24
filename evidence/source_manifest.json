@@ -1,0 +1,64 @@
+{
+  "verified_at_utc": "2026-10-24T17:38:07.437021+00:00",
+  "sources": [
+    {
+      "id": "D1",
+      "file": "Supplementary_Data_09.CRISPR-KO-screen_results.csv",
+      "sha256": "d14accf5fa62320c114741de936c5f3ca05754babd0257670a55542a7c1187bc",
+      "url": "https://zenodo.org/records/7106728/files/Supplementary_Data_09.CRISPR-KO-screen_results.csv?download=1",
+      "bytes": 895768,
+      "path": "data/raw/Supplementary_Data_09.CRISPR-KO-screen_results.csv",
+      "resolved_url": "https://zenodo.org/records/7106728/files/Supplementary_Data_09.CRISPR-KO-screen_results.csv?download=1",
+      "archive_member": null,
+      "hash_matches_expected": true
+    },
+    {
+      "id": "D2",
+      "file": "41588_2022_1261_MOESM4_ESM.xlsx",
+      "sha256": "a8f47504edd26d999cb861f146f6fd6aa2ee2ec8368a01e29c808a10238a7690",
+      "url": "https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41588-022-01261-2/MediaObjects/41588_2022_1261_MOESM4_ESM.xlsx",
+      "source_archive_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9839450/supplementaryFiles",
+      "bytes": 19977651,
+      "path": "data/raw/41588_2022_1261_MOESM4_ESM.xlsx",
+      "resolved_url": "https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41588-022-01261-2/MediaObjects/41588_2022_1261_MOESM4_ESM.xlsx",
+      "archive_member": null,
+      "hash_matches_expected": true
+    },
+    {
+      "id": "D3",
+      "file": "mmc6.xlsx",
+      "sha256": "e8f7c71f8f47b94bef33f1f90b487a7bcbf32f4328d61460c60080cd4c7abb8c",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S2666979X22001677-mmc6.xlsx",
+      "source_archive_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9903835/supplementaryFiles",
+      "bytes": 1196717,
+      "path": "data/raw/mmc6.xlsx",
+      "resolved_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2666979X22001677-mmc6.xlsx",
+      "archive_member": null,
+      "hash_matches_expected": true
+    },
+    {
+      "id": "C1",
+      "file": "16_CRISPR_figure.ipynb",
+      "sha256": "4b9da99ec36eb2d903a2b7fb987ceed24a7f56c9910da4860566171ee0360956",
+      "hash_origin": "Pinned from the specified immutable source commit.",
+      "url": "https://raw.githubusercontent.com/Gaulton-Lab/BetaCells_cytokines_T1D/7d10581be640a2a8f4586c53a677b7c6cbbd7b1c/notebooks/16_CRISPR_figure.ipynb",
+      "commit": "7d10581be640a2a8f4586c53a677b7c6cbbd7b1c",
+      "bytes": 130940,
+      "path": "data/raw/16_CRISPR_figure.ipynb",
+      "resolved_url": "https://raw.githubusercontent.com/Gaulton-Lab/BetaCells_cytokines_T1D/7d10581be640a2a8f4586c53a677b7c6cbbd7b1c/notebooks/16_CRISPR_figure.ipynb",
+      "archive_member": null,
+      "hash_matches_expected": true
+    }
+  ],
+  "remote_only_sources": [
+    {
+      "id": "rottner_author_code_v1",
+      "file": "Rottner_etal_2022-v1.0.0.zip",
+      "sha256": "45868253fd8ede3575900d6eaa51f54d307270b901d8e4ae49ed1682887b6dbd",
+      "url": "https://zenodo.org/api/records/7226348/files/TGDStanford/Rottner_etal_2022-v1.0.0.zip/content",
+      "bytes": 10474,
+      "storage": "external_cache_not_redistributed",
+      "hash_matches_expected": true
+    }
+  ]
+}

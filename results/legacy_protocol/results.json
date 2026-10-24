@@ -1,0 +1,406 @@
+{
+  "analyses": [
+    {
+      "status": "estimated",
+      "conditional_mle": 1.2347165863601686,
+      "ci_lower": 0.6597371302940099,
+      "ci_upper": 2.1335791624584592,
+      "confidence_level": 0.95,
+      "p_enrichment": 0.2634092277950091,
+      "observed_total": 14,
+      "support_lower": 0,
+      "support_upper": 274,
+      "n_strata": 20,
+      "n_informative_strata": 12,
+      "estimate_boundary": "interior",
+      "method": "exact conditional; inclusive equal tails; direct convolution",
+      "name": "primary",
+      "n": 12184,
+      "A": 285,
+      "L": 479,
+      "conflicts": 14,
+      "table_2x2": [
+        [
+          14,
+          271
+        ],
+        [
+          465,
+          11434
+        ]
+      ],
+      "fraction_A1": 0.04912280701754386,
+      "fraction_A0": 0.03907891419447013,
+      "unstratified": {
+        "sample_odds_ratio": 1.2702932190612228,
+        "conditional_mle": 1.2702654912998668,
+        "ci_lower": 0.6797890999305755,
+        "ci_upper": 2.190721666367118,
+        "p_enrichment": 0.23236843488864511
+      },
+      "conclusion": "unresolved"
+    },
+    {
+      "status": "estimated",
+      "conditional_mle": 1.3181171494977126,
+      "ci_lower": 0.7247485502033076,
+      "ci_upper": 2.2239096018049023,
+      "confidence_level": 0.95,
+      "p_enrichment": 0.18475330056753797,
+      "observed_total": 15,
+      "support_lower": 0,
+      "support_upper": 387,
+      "n_strata": 4,
+      "n_informative_strata": 3,
+      "estimate_boundary": "interior",
+      "method": "exact conditional; inclusive equal tails; direct convolution",
+      "name": "no_expression",
+      "n": 17275,
+      "A": 390,
+      "L": 513,
+      "conflicts": 15,
+      "table_2x2": [
+        [
+          15,
+          375
+        ],
+        [
+          498,
+          16387
+        ]
+      ],
+      "fraction_A1": 0.038461538461538464,
+      "fraction_A0": 0.02949363340242819,
+      "unstratified": {
+        "sample_odds_ratio": 1.3162248995983936,
+        "conditional_mle": 1.3162011846506825,
+        "ci_lower": 0.723732056081348,
+        "ci_upper": 2.220534027781734,
+        "p_enrichment": 0.18606831771935023
+      },
+      "conclusion": "unresolved"
+    },
+    {
+      "status": "estimated",
+      "conditional_mle": 1.288390104916792,
+      "ci_lower": 0.6881100477983917,
+      "ci_upper": 2.2276319605535826,
+      "confidence_level": 0.95,
+      "p_enrichment": 0.2191952479625606,
+      "observed_total": 14,
+      "support_lower": 0,
+      "support_upper": 256,
+      "n_strata": 20,
+      "n_informative_strata": 10,
+      "estimate_boundary": "interior",
+      "method": "exact conditional; inclusive equal tails; direct convolution",
+      "name": "expression_ge1",
+      "n": 13718,
+      "A": 311,
+      "L": 480,
+      "conflicts": 14,
+      "table_2x2": [
+        [
+          14,
+          297
+        ],
+        [
+          466,
+          12941
+        ]
+      ],
+      "fraction_A1": 0.04501607717041801,
+      "fraction_A0": 0.034757962258521666,
+      "unstratified": {
+        "sample_odds_ratio": 1.3090417768529357,
+        "conditional_mle": 1.3090127848986943,
+        "ci_lower": 0.7013624481954924,
+        "ci_upper": 2.2540727140172865,
+        "p_enrichment": 0.20219642021445655
+      },
+      "conclusion": "unresolved"
+    },
+    {
+      "status": "estimated",
+      "conditional_mle": 1.3484503054661274,
+      "ci_lower": 0.718956169746962,
+      "ci_upper": 2.3366736053198065,
+      "confidence_level": 0.95,
+      "p_enrichment": 0.1781337715385069,
+      "observed_total": 14,
+      "support_lower": 0,
+      "support_upper": 236,
+      "n_strata": 20,
+      "n_informative_strata": 11,
+      "estimate_boundary": "interior",
+      "method": "exact conditional; inclusive equal tails; direct convolution",
+      "name": "expression_ge100",
+      "n": 10143,
+      "A": 238,
+      "L": 451,
+      "conflicts": 14,
+      "table_2x2": [
+        [
+          14,
+          224
+        ],
+        [
+          437,
+          9468
+        ]
+      ],
+      "fraction_A1": 0.058823529411764705,
+      "fraction_A0": 0.04411913175164059,
+      "unstratified": {
+        "sample_odds_ratio": 1.3541189931350115,
+        "conditional_mle": 1.354072783773293,
+        "ci_lower": 0.7222680330900928,
+        "ci_upper": 2.3451340504480798,
+        "p_enrichment": 0.17436885566461524
+      },
+      "conclusion": "unresolved"
+    },
+    {
+      "status": "estimated",
+      "conditional_mle": 1.0654589824042566,
+      "ci_lower": 0.28252217768689786,
+      "ci_upper": 2.849081569482838,
+      "confidence_level": 0.95,
+      "p_enrichment": 0.5237228733161443,
+      "observed_total": 4,
+      "support_lower": 0,
+      "support_upper": 95,
+      "n_strata": 20,
+      "n_informative_strata": 10,
+      "estimate_boundary": "interior",
+      "method": "exact conditional; inclusive equal tails; direct convolution",
+      "name": "survival_fdr005",
+      "n": 12184,
+      "A": 99,
+      "L": 479,
+      "conflicts": 4,
+      "table_2x2": [
+        [
+          4,
+          95
+        ],
+        [
+          475,
+          11610
+        ]
+      ],
+      "fraction_A1": 0.04040404040404041,
+      "fraction_A0": 0.03930492345883326,
+      "unstratified": {
+        "sample_odds_ratio": 1.029141274238227,
+        "conditional_mle": 1.0291388161270494,
+        "ci_lower": 0.27362316545111287,
+        "ci_upper": 2.740319140569216,
+        "p_enrichment": 0.549469158102184
+      },
+      "conclusion": "unresolved"
+    },
+    {
+      "status": "estimated",
+      "conditional_mle": 1.764207961781606,
+      "ci_lower": 0.6298407549846,
+      "ci_upper": 3.9977650212793154,
+      "confidence_level": 0.95,
+      "p_enrichment": 0.13852223384628232,
+      "observed_total": 6,
+      "support_lower": 0,
+      "support_upper": 145,
+      "n_strata": 20,
+      "n_informative_strata": 7,
+      "estimate_boundary": "interior",
+      "method": "exact conditional; inclusive equal tails; direct convolution",
+      "name": "three_directional_guides",
+      "n": 11818,
+      "A": 275,
+      "L": 146,
+      "conflicts": 6,
+      "table_2x2": [
+        [
+          6,
+          269
+        ],
+        [
+          140,
+          11403
+        ]
+      ],
+      "fraction_A1": 0.02181818181818182,
+      "fraction_A0": 0.01212856276531231,
+      "unstratified": {
+        "sample_odds_ratio": 1.816728624535316,
+        "conditional_mle": 1.816606524209757,
+        "ci_lower": 0.649670448653183,
+        "ci_upper": 4.106613364204202,
+        "p_enrichment": 0.12545378349891456
+      },
+      "conclusion": "unresolved"
+    },
+    {
+      "status": "estimated",
+      "conditional_mle": 0.9802883515845024,
+      "ci_lower": 0.4796303873259681,
+      "ci_upper": 1.8014362221504667,
+      "confidence_level": 0.95,
+      "p_enrichment": 0.5693211416701937,
+      "observed_total": 11,
+      "support_lower": 0,
+      "support_upper": 271,
+      "n_strata": 20,
+      "n_informative_strata": 12,
+      "estimate_boundary": "interior",
+      "method": "exact conditional; inclusive equal tails; direct convolution",
+      "name": "survival_harming",
+      "n": 12184,
+      "A": 286,
+      "L": 479,
+      "conflicts": 11,
+      "table_2x2": [
+        [
+          11,
+          275
+        ],
+        [
+          468,
+          11430
+        ]
+      ],
+      "fraction_A1": 0.038461538461538464,
+      "fraction_A0": 0.039334341906202726,
+      "unstratified": {
+        "sample_odds_ratio": 0.9769230769230769,
+        "conditional_mle": 0.9769249298569458,
+        "ci_lower": 0.47860257923505817,
+        "ci_upper": 1.7922076246407737,
+        "p_enrichment": 0.573486279598247
+      },
+      "conclusion": "unresolved"
+    },
+    {
+      "status": "estimated",
+      "conditional_mle": 1.1871490698692042,
+      "ci_lower": 0.48299228291492197,
+      "ci_upper": 2.98627805840864,
+      "confidence_level": 0.95,
+      "p_enrichment": 0.420435898481677,
+      "observed_total": 14,
+      "support_lower": 0,
+      "support_upper": 25,
+      "n_strata": 20,
+      "n_informative_strata": 8,
+      "estimate_boundary": "interior",
+      "method": "exact conditional; inclusive equal tails; direct convolution",
+      "name": "positive_vs_negative",
+      "n": 571,
+      "A": 285,
+      "L": 25,
+      "conflicts": 14,
+      "table_2x2": [
+        [
+          14,
+          271
+        ],
+        [
+          11,
+          275
+        ]
+      ],
+      "fraction_A1": 0.04912280701754386,
+      "fraction_A0": 0.038461538461538464,
+      "unstratified": {
+        "sample_odds_ratio": 1.2915129151291513,
+        "conditional_mle": 1.2909366811348109,
+        "ci_lower": 0.5336826896499469,
+        "ci_upper": 3.2029726844795245,
+        "p_enrichment": 0.3383489861676587
+      },
+      "conclusion": "unresolved"
+    },
+    {
+      "status": "estimated",
+      "conditional_mle": 1.7437597566820653,
+      "ci_lower": 0.6227650810496212,
+      "ci_upper": 3.9493560612794734,
+      "confidence_level": 0.95,
+      "p_enrichment": 0.14365368630833067,
+      "observed_total": 6,
+      "support_lower": 0,
+      "support_upper": 145,
+      "n_strata": 20,
+      "n_informative_strata": 7,
+      "estimate_boundary": "interior",
+      "method": "exact conditional; inclusive equal tails; direct convolution",
+      "name": "three_guides_fixed_universe",
+      "n": 12184,
+      "A": 285,
+      "L": 146,
+      "conflicts": 6,
+      "table_2x2": [
+        [
+          6,
+          279
+        ],
+        [
+          140,
+          11759
+        ]
+      ],
+      "fraction_A1": 0.021052631578947368,
+      "fraction_A0": 0.011765694596184553,
+      "unstratified": {
+        "sample_odds_ratio": 1.8062980030721967,
+        "conditional_mle": 1.8061816935652548,
+        "ci_lower": 0.6461463305488147,
+        "ci_upper": 4.081185188696692,
+        "p_enrichment": 0.1277415195767131
+      },
+      "conclusion": "unresolved"
+    }
+  ],
+  "source_margins": {
+    "survival_rows": 20708,
+    "survival_eligible": 18714,
+    "survival_favoring": 427,
+    "survival_harming": 440,
+    "insulin_hit_rows": 580,
+    "insulin_decrease_hits": 518,
+    "insulin_increase_hits": 62,
+    "insulin_guide_rows": 142180,
+    "insulin_guide_replicates": {
+      "r0": 71090,
+      "r1": 71090
+    },
+    "insulin_gene_labels": 18056,
+    "covered_insulin_targets": 17597,
+    "U0": 17276,
+    "U": 12184,
+    "primary_survival_favoring_margin": 285,
+    "primary_decrease_margin": 479,
+    "duplicated_expression_names": 75,
+    "invalid_guide_rows": 0,
+    "failed_direction_audits": [
+      "TOMM6"
+    ],
+    "SOCS1_survival_beta": -0.47645,
+    "INS_replica_medians": [
+      1.059285,
+      1.00272
+    ],
+    "TOMM6_baseMean": 0.0,
+    "TOMM6_positive_support": [
+      1,
+      3
+    ],
+    "survival_denominator_discrepancy": {
+      "article": 18703,
+      "source_filter": 18714,
+      "difference": 11,
+      "disposition": "retain explicit deposited membership; author notebook contingency margins also total 18714"
+    },
+    "marginal_check_mismatches": {}
+  }
+}
